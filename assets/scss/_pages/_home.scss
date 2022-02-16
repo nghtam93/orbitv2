@@ -1,0 +1,112 @@
+.home{
+	&-header{
+		position: relative;
+		.el__wrap{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items:center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.el__thumb{
+			margin-bottom: 40px;
+		}
+		.el__excerpt{
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 26px;
+			letter-spacing: 0.25em;
+			color: #FFFFFF;
+		}
+		&__scroll{
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			font-weight: bold;
+			font-size: 9px;
+			line-height: 13px;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			p{
+				margin-bottom: 6px;
+			}
+			i{
+				position: relative;
+				&:after{
+					content: '';
+					display: inline-block;
+					width: 2px;
+					height: 36px;
+					background: linear-gradient(to bottom, #FFFFFF -6.94%, rgba(255, 255, 255, 0) 100.87%, #FFFFFF 105.56%);
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					top: -28px;
+					left: calc(50% - 3px);
+					width: 6px;
+					height: 6px;
+					border-radius:50%;
+					background: #F601E6;
+				}
+			}
+
+		}
+	}
+
+	&-intro{
+		position: relative;
+		background-image: url(../img/home-intro-bg.png);
+		background-repeat: no-repeat;
+		background-size:cover;
+		padding-top: 45.2%;
+		.el__thumb{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.el__wrap{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.el__meta{
+			max-width: 40%;
+		}
+		.el__title{
+			font-family: 'UTM Akashi';
+			font-weight: normal;
+			font-size: 120px;
+			line-height: 146px;
+			text-shadow: 5px 10px 8px rgba(0, 0, 0, 0.44);
+			margin-bottom: 46px;
+		}
+		.el__excerpt{
+
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 27px;
+			color: #FFFFFF;
+			margin-bottom: 27px;
+		}
+		.el__sub{
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 36px;
+			color: #FFFFFF;
+			margin-bottom: 46px;
+		}
+	}
+}
