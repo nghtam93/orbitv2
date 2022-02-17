@@ -94,6 +94,22 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
+    /**/
+
+     // Your main div is characters-main
+    var flkty = new Flickity('.paradigm__slider');
+
+    // Next and previous events of the characters-nav
+    $(".home-paradigm .flickity__button.-next").on("click", function() {
+          // Changing items of the main div
+           flkty.next();
+    });
+
+    $(".home-paradigm .flickity__button.-prev").on("click", function() {
+          // Changing items of the main div
+          flkty.previous();
+    });
+
 });
 
 
