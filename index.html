@@ -9,7 +9,9 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- flickity -->
     <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
     <link href="assets/css/main.css" rel="stylesheet">
+
 
   </head>
   <body class="home">
@@ -18,7 +20,7 @@
       <div class="container-fluid d-flex align-items-center">
         <h1 class="logo">
           <a href="index.html">
-            <img src="images/logo.png" alt="Logo">
+            <img src="images/logo.svg" alt="Logo">
           </a>
         </h1>
 
@@ -47,16 +49,16 @@
 
         <div class="container">
           <div class="el__wrap">
-            <div class="el__thumb">
+            <div class="el__thumb wow fadeInUp">
               <img src="images/home-header.png" alt="">
             </div>
-            <div class="el__excerpt text-center">
+            <div class="el__excerpt text-center wow fadeInUp">
               <p>[ METAVERSE GAMING ]    [ META VISUAL PLATFORM ] </p>
               <p> [ CREATOR DECK ]    [ SPACE MARKET ]</p>
             </div>
           </div>
         </div>
-        <div class="home-header__scroll">
+        <div class="home-header__scroll wow fadeInUp">
           <p>SCROLL TO DISCOVER</p>
           <i></i>
         </div>
@@ -66,25 +68,25 @@
         <div class="el__wrap">
           <div class="container-fluid">
             <div class="el__meta">
-              <h2 class="el__title">Orbit Meta</h2>
-              <div class="el__excerpt">
+              <h2 class="el__title wow fadeInRight">Orbit Meta</h2>
+              <div class="el__excerpt wow fadeInRight">
                 Orbit Meta is a visual technology game project that integrates NFT and Blockchain. Create a connecting space between parallel worlds from ancient to modern and play to earn.
               </div>
-              <div class="el__sub">Is your world round or square? </div>
-              <div>
+              <div class="el__sub wow fadeInRight">Is your world round or square? </div>
+              <div class=" wow fadeInUp">
                 <a href="" class="btn-style -large"><span>LETS FIND OUT</span></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="el__thumb dnfix__thumb -contain">
+        <div class="el__thumb dnfix__thumb -contain wow fadeInUp">
           <img src="images/home-find-out.png" alt="">
         </div>
       </section>
 
-      <section class="home-paradigm">
-        <div class="paradigm__slider flickity flickity--fade" data-flickity='{ "autoPlay": true,"pauseAutoPlayOnHover": false, "wrapAround": true, "cellAlign": "left", "prevNextButtons": true, "pageDots": false }'>
+      <section class="home-paradigm js-flickity__wrap">
+        <div class="paradigm__slider flickity flickity--fade">
           <div class="slider__item__wrap w-100">
             <div class="slider__item__thumb dnfix__thumb">
               <img src="images/home-paradigm-1.jpg" alt="">
@@ -130,8 +132,8 @@
               <img src="images/home-paradigm-5.jpg" alt="">
             </div>
             <div class="slider__item__meta">
-              <h3 class="slider__item__title">SOCIALFI WITH 360 LIVESTREAM FEATURE</h3>
-              <p class="slider__item__sub">CULTURAL PRESERVATION</p>
+              <h3 class="slider__item__title">THE NEW PARADIGM</h3>
+              <p class="slider__item__sub">SOCIALFI WITH 360 LIVESTREAM FEATURE</p>
               <div class="slider__item__excerpt">A digital society where the community can interact, participate in activities like real life and make money from them.</div>
             </div>
           </div>
@@ -158,7 +160,7 @@
         </div>
 
         <div class="container-fluid position-relative">
-          <div class="paradigm__slider__arrow">
+          <div class="flickity__slider__arrow">
             <div class="flickity__button -prev">
               <span>PREVIOUS</span>
             </div>
@@ -169,10 +171,10 @@
         </div>
       </section>
 
-      <section class="home-intro" style="background-image: url(images/home-intro-1.jpg);">
+      <section class="home-intro" style="background-image: url(images/home-intro-2.jpg);">
 
         <div class="el__wrap">
-            <div class="el__box">
+            <div class="el__box wow fadeInUp">
               <div class="el__meta">
                 <h3 class="el__title">ORBIT METAVERSE</h3>
                 <div class="el__excerpt">
@@ -181,11 +183,10 @@
               </div>
 
               <div class="el__thumbs">
-                <div class="el__thumb el__thumb--1 active" data-src="images/home-intro-3.jpg">
+                <div class="el__thumb el__thumb--1" data-src="images/home-intro-3.jpg">
                   <div class="dnfix__thumb"><img src="images/home-intro-3.jpg" alt=""></div>
-
                 </div>
-                <div class="el__thumb el__thumb--2" data-src="images/home-intro-2.jpg">
+                <div class="el__thumb el__thumb--2 active" data-src="images/home-intro-2.jpg">
                   <div class="dnfix__thumb"><img src="images/home-intro-2.jpg" alt=""></div>
                 </div>
                 <div class="el__thumb el__thumb--3" data-src="images/home-intro-1.jpg">
@@ -200,12 +201,12 @@
       <section class="home-nftgallery">
         <div class="container-fluid">
             <header class="sc__header text-center">
-              <h2 class="sc__header__title">NFT GALLERY</h2>
-              <div class="sc__header__excerpt">Collect diversified NFT and show your personality</div>
+              <h2 class="sc__header__title wow fadeInLeft">NFT GALLERY</h2>
+              <div class="sc__header__excerpt wow fadeInRight">Collect diversified NFT and show your personality</div>
             </header>
 
-            <div class="sc__content">
-              <ul class="nav nav-pills" id="nftgalleryTab" role="tablist">
+            <div class="sc__content wow fadeInUp">
+              <ul class="nav nav-pills justify-content-center" id="nftgalleryTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="nftgallery01-tab" data-bs-toggle="tab" data-bs-target="#nftgallery01" type="button" role="tab" aria-controls="nftgallery01" aria-selected="true">CHARACTERS</button>
                 </li>
@@ -216,8 +217,8 @@
               <div class="tab-content" id="nftgalleryTabContent">
                 <div class="tab-pane fade show active" id="nftgallery01" role="tabpanel" aria-labelledby="nftgallery01-tab">
 
-                  <div class="flickity__slider__wrapper">
-                    <div class="el__slider" data-flickity='{ "wrapAround": true,"groupCells": 3, "cellAlign": "left", "prevNextButtons": false, "pageDots": true }'>
+                  <div class="flickity__wrap character__slider__wrap">
+                    <div class="el__slider character__slider js-flickity" data-flickity='{ "wrapAround": true,"groupCells": 3, "cellAlign": "left", "prevNextButtons": false, "pageDots": true }'>
 
                       <div class="slider__item__wrap">
                         <div class="slider__item">
@@ -402,7 +403,6 @@
 
                     </div>
 
-
                     <div class="flickity__slider__arrow">
                       <div class="flickity__button -prev">
                         <span>PREVIOUS</span>
@@ -414,140 +414,971 @@
 
                   </div>
 
+                </div>
+                <div class="tab-pane fade" id="nftgallery02" role="tabpanel" aria-labelledby="nftgallery02-tab">
+                    <div class="flickity__wrap pet__slider__wrap">
+                      <div class="el__slider pet__slider js-flickity" data-flickity='{ "wrapAround": true,"groupCells": 3, "cellAlign": "left", "prevNextButtons": false, "pageDots": true }'>
+
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-01.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Vincent</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-02.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Maya</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-03.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Miana</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-04.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Moeah</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-05.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Viking</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-06.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Indra</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-07.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Pharaoh</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-08.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Zeus</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-09.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Medusa</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-10.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Hades</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-11.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Poseidon</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-12.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Mermaid <br>Platinum</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-13.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Mermaid <br>Pearl</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-14.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Thor</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item__wrap">
+                          <div class="slider__item">
+                            <div class="slider__item__thumb">
+                              <div class="dnfix__thumb -contain">
+                                <img src="images/character/nft-gallery-15.png" alt="">
+                              </div>
+                            </div>
+                            <div class="slider__item__meta">
+                              <h3 class="slider__item__title">Bunny Hunter</h3>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="flickity__slider__arrow">
+                        <div class="flickity__button -prev">
+                          <span>PREVIOUS</span>
+                        </div>
+                        <div class="flickity__button -next">
+                          <span>NEXT</span>
+                        </div>
+                      </div>
+
+                    </div>
 
                 </div>
-                <div class="tab-pane fade" id="nftgallery02" role="tabpanel" aria-labelledby="nftgallery02-tab">...</div>
               </div>
             </div>
         </div>
       </section>
 
-      <div class="">
-        <section class="home-we-made">
-          <div class="container container-1300">
+      <section class="home-we-made">
+        <div class="container container-1300">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInUp">HOW WE MADE</h2>
+          </header>
+
+          <div class="videoWrapper__mask wow fadeInUp">
+            <div class="ratio ratio-16x9 -center">
+              <video src="images/home-we-made.mp4" loop muted autoplay></video>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="home-tokenmoics">
+        <div class="container container-1300">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInLeft">TOKENOMICS</h2>
+            <div class="sc__header__excerpt wow fadeInRight">Orbit token is the governance token of Orbit Metaverse, issued on Binance Smart Chain</div>
+          </header>
+
+          <div class="sc__content d-md-flex align-items-center">
+              <div class="col--left wow fadeInLeft">
+                <div class="el__item -s1">
+                  <div class="el__item__circle" style="background-color:#F6C001"></div>
+                  <div class="flex-grow-1">
+                    <p>Seedround (2%):</p>
+                    <p><strong>20,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s2">
+                  <div class="el__item__circle" style="background-color:#F6A301"></div>
+                  <div class="flex-grow-1">
+                    <p>Private Sale (5%):</p>
+                    <p><strong>50,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s3">
+                  <div class="el__item__circle" style="background-color:#FE7549"></div>
+                  <div class="flex-grow-1">
+                    <p>Strategic (4%):</p>
+                    <p><strong>40,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s4">
+                  <div class="el__item__circle" style="background-color:#F42A57"></div>
+                  <div class="flex-grow-1">
+                    <p>Public Sale (0.5%):</p>
+                    <p><strong>5,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s5">
+                  <div class="el__item__circle" style="background-color:#A50E32"></div>
+                  <div class="flex-grow-1">
+                    <p>Ecosystem Reward (45%):</p>
+                    <p><strong>450,000,000</strong></p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col--center wow fadeInUp">
+                <div class="el__box">
+                  <div class="el__box__wrap">
+                    <p class="el__box__title">MAX SUPPLY</p>
+                    <p class="el__box__sub">1 billion</p>
+                    <p class="el__box__excerpt">( 1.000.000.000 )</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col--right  wow fadeInRight">
+                <div class="el__item -s6">
+                  <div class="el__item__circle" style="background-color:#6340BD"></div>
+                  <div class="flex-grow-1">
+                    <p>Foundation (16%):</p>
+                    <p><strong>160,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s7">
+                  <div class="el__item__circle" style="background-color:#3051B7"></div>
+                  <div class="flex-grow-1">
+                    <p>DAO Foundation (5%):</p>
+                    <p><strong>50,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s8">
+                  <div class="el__item__circle" style="background-color:#159FE5"></div>
+                  <div class="flex-grow-1">
+                    <p>Private Sale (5%):</p>
+                    <p><strong>50,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s9">
+                  <div class="el__item__circle" style="background-color:#5EB661"></div>
+                  <div class="flex-grow-1">
+                    <p>Marketing (15%):</p>
+                    <p><strong>150,000,000</strong></p>
+                  </div>
+
+                </div>
+                <div class="el__item -s10">
+                  <div class="el__item__circle" style="background-color:#95C61D"></div>
+                  <div class="flex-grow-1">
+                    <p>Liquidity (2.5%):</p>
+                    <p><strong>25,000,000</strong></p>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-roadmap">
+        <div class="sc__wrap">
+          <div class="container-fluid">
             <header class="sc__header text-center">
-              <h2 class="sc__header__title">HOW WE MADE</h2>
+              <div class="mb-3 wow fadeInUp">
+                <img src="images/home-roadmap-header.png" alt="">
+              </div>
+              <h2 class="sc__header__title mb-0 wow fadeInUp">ROADMAP</h2>
+            </header>
+          </div>
+          <div class="sc__content wow fadeInUp">
+            <div class="container-fluid">
+              <div class="el__slider" data-flickity='{ "wrapAround": false, "cellAlign": "left", "prevNextButtons": false, "pageDots": false }'>
+                <!-- Slides -->
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q3/2021</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Complete Ideation</li>
+                        <li>Team Recruitment</li>
+                        <li>Start Building the Product</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q4/2021</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Whitepaper</li>
+                        <li>Game Mechanism</li>
+                        <li>UI</li>
+                        <li>Basic Character & Pets</li>
+                        <li>Private Funding </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q1/2022</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>IDO</li>
+                        <li>Detailed P2E Mechanism</li>
+                        <li>Treasure Hunter Launch</li>
+                        <li>Forge Function Launch</li>
+                        <li>Maya Empire Demo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q2/2022</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Breeding Function Launch</li>
+                        <li>Convert Characters & Pets 2D -> 3D</li>
+                        <li>Maya Empire Launch</li>
+                        <li>NFT Marketplace Launch</li>
+                        <li>Viking Warrior Demo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q3/2022</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Viking Warrior Launch</li>
+                        <li>Indus OverLoot Demo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q4/2022</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Indus OverLoot Launch</li>
+                        <li>Egypt Battle Gods Demo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q1/2023</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Egypt Battle Gods Launch</li>
+                        <li>Atlantis Revival Demo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q2/2023</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Atlantis Revival Launch</li>
+                        <li>Developing Metaverse Idea</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q4/2023</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>Orbit Metaverse Launch</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item__wrap">
+                  <div class="slider__item">
+                    <p class="slider__item__title">Q1/2024</p>
+                    <div class="slider__item__excerpt">
+                      <ul>
+                        <li>VR/AR integration</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-ourteam">
+        <div class="container container-1500 position-relative">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title mb-0 wow fadeInUp">OUR TEAM</h2>
+          </header>
+
+          <div class="sc__content ourteam__slider__wrap">
+            <div class="ourteam__slider flickity" data-flickity='{ "wrapAround": false, "cellAlign": "left", "prevNextButtons": false, "pageDots": true }'>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/phi-hiep.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">PHI HIEP</div>
+                      <div class="slider__item__sub">CEO</div>
+                      <div class="slider__item__excerpt">
+                        Lead the R&D for new technology products and IT solution services for domestic and overseas clients with a strong cashflow and stably increasing revenue.
+                      </div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">PHI HIEP</h3>
+                      <p class="ourteamModal__sub">CEO</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>The Founder and CEO of sPhoton.</li>
+                          <li>More than 10 years of experience in researching and applying information technology to work and life.</li>
+                          <li>Lead the R&D for new technology products and IT solution services for domestic and overseas clients with a strong cashflow and stably increasing revenue.</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>Hanoi University of Science and Technology.</li>
+                          <li>B.S. in Computer Science.</li>
+                          <li>Tokyo University of Agriculture and Technology - Nakagawa Laboratory, Degree Classification: Very good.</li>
+                          <li>Research Student - a part of JASSO Student Exchange Support Program.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul class="mb-3">
+                          <li>Microsoft Student Partner Vietnam’s Hackathon, First Prize.</li>
+                          <li>National Microsoft Imagine Cup Competition, Second Prize.</li>
+                          <li>VPBank SME Idea, Top 5.</li>
+                          <li>Coding Inspiration, Second Prize.</li>
+                          <li>Hasu: Social network for 50+.</li>
+                          <li>Egap: Smart agriculture solution.</li>
+                          <li>Polyco: Manufactory monitoring device and assets tracking.</li>
+                          <li>Sugoi: HOME - Real estate solution for real estate consultancy company in Japan, NEWS – Vietnam Japan e- magazine.</li>
+                          <li>sPhoton Chat: Enterprise internal communication application with built-in chatbot.</li>
+                          <li>sPhoton AI: The very first project under preparation for fund raising in 2020, a company AI assistant integrated in a messaging platform for SMEs.</li>
+                          <li>Hymetnet: IT solution to manage and analyze data from stations network all over Vietnam of Vietnam Institute of Meteorology, Hydrology and Climate Change. </li>
+                          <li>Kotopa: A vocabulary learning app on mobile.</li>
+                          <li>Icheck: A mobile app provides product information via Barcode for origin track and counterfeit prevention.</li>
+                          <li>XKanji: A Japanese - Vietnamese dictionary app using tesseract as the OCR module and Google services for handwriting recognition module.</li>
+                          <li>TDCH: Chinese handwriting recognition app (using neural network run on mobile device).</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/Andrew.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">ANDREW TRAN</div>
+                      <div class="slider__item__sub">CMO</div>
+                      <div class="slider__item__excerpt">
+                        Co-Founder Ecosapa Joint Stock Company.<br>
+                        CMO Paradise of Co-Founder SMT.<br>
+                        Co-Founder of sPhoton.
+                      </div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">ANDREW TRAN</h3>
+                      <p class="ourteamModal__sub">CMO</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>2017 - 2019: Owner Bigbrothers Software Development Company.</li>
+                          <li>Development of Share Holder Flex software.</li>
+                          <li>12 years in information systems Hopital.</li>
+                          <li>6 years of outside source development of Blockchain software.</li>
+                          <li>Co-Founder Ecosapa Joint Stock Company.</li>
+                          <li>CMO Paradise of Co-Founder SMT.</li>
+                          <li>Co-Founder of sPhoton.</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>University of Social Sciences and Humanities.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul>
+                          <li>Copyright of the Hospital Administration System.</li>
+                          <li>Copyright of System Smartapp Cloudserver.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/Hung_Nguyen.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">HUBERT NGUYEN</div>
+                      <div class="slider__item__sub">CGO</div>
+                      <div class="slider__item__excerpt">
+                        CBDO at Pixels-x Brand (under IGC company) and SKRICE Game Studio CO., LTD.(2D/3D Graphics Specialization Company).
+                      </div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">HUBERT NGUYEN</h3>
+                      <p class="ourteamModal__sub">CGO</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>2015 - 2017: R&D Department at CMC Infosec Company(Security Software Specialization Company).</li>
+                          <li>2017 - 2018: System Deployment - Administration at FPT Information System Company(Security Software Specialization Company).</li>
+                          <li>2018 - 2019: Account / Build Design Studio at LOON EYES Studio Joint Stock Company(2D/3D Graphics Specialization Company).</li>
+                          <li>2019 - 2021: Project Manager & Web Consultant at Time Communication Joint Stock Company(IMC Agency).</li>
+                          <li>2020 - Now: Brand Manager at ONUS Studio International Corporation.</li>
+                          <li>Now: CBDO at Pixels-x Brand (under IGC company) and SKRICE Game Studio CO., LTD.(2D/3D Graphics Specialization Company).</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>FPT University - Major in Information Security.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul class="mb-3">
+                          <li>Project Manager / Pitching / 3D Team Lead Coordinato and Develop marketing successfully for some projects:</li>
+                          <li>LOGA - Introduction.</li>
+                          <li>Aria Vung Tau.</li>
+                          <li>Ba Na hill Da Nang.</li>
+                          <li>Happy Home Ca Mau.</li>
+                          <li>Samsung R&D Center.</li>
+                          <li>HINODE CITY.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/Minh-le.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">MINH LE</div>
+                      <div class="slider__item__sub">GAME DIRECTOR</div>
+                      <div class="slider__item__excerpt">Game Director at sPhoton.</div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">MINH LE</h3>
+                      <p class="ourteamModal__sub">GAME DIRECTOR</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>2016 - 2018: Game Designer at Senspark Game Company.</li>
+                          <li>2018 - 2020: Project Leader at HD Entertainment.</li>
+                          <li>2020 - 2021: Founder of Mystic Game Studio.</li>
+                          <li>2021 - Now: Game Director at sPhoton.</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>Ho Chi Minh City University of Agriculture and Forestry.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul>
+                          <li>Self-publishing more than 10 games. In which, the game Universe Master received nearly 1 million downloads in just a few months. Besides, many other games can be mentioned such as:</li>
+                          <li>Mine Craft.</li>
+                          <li>Item Merge Quest.</li>
+                          <li>Brain Wipe.</li>
+                          <li>Get Rich 3D.</li>
+                          <li>Tank 1990.</li>
+                          <li>Shooter Hero Online.</li>
+                          <li>Flip The Table Online.</li>
+                          <li>Slope Down.</li>
+                          <li>Adventure Tom.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/phi-hiep.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">PHI HIEP</div>
+                      <div class="slider__item__sub">CEO</div>
+                      <div class="slider__item__excerpt">
+                        Lead the R&D for new technology products and IT solution services for domestic and overseas clients with a strong cashflow and stably increasing revenue.
+                      </div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">PHI HIEP</h3>
+                      <p class="ourteamModal__sub">CEO</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>The Founder and CEO of sPhoton.</li>
+                          <li>More than 10 years of experience in researching and applying information technology to work and life.</li>
+                          <li>Lead the R&D for new technology products and IT solution services for domestic and overseas clients with a strong cashflow and stably increasing revenue.</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>Hanoi University of Science and Technology.</li>
+                          <li>B.S. in Computer Science.</li>
+                          <li>Tokyo University of Agriculture and Technology - Nakagawa Laboratory, Degree Classification: Very good.</li>
+                          <li>Research Student - a part of JASSO Student Exchange Support Program.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul class="mb-3">
+                          <li>Microsoft Student Partner Vietnam’s Hackathon, First Prize.</li>
+                          <li>National Microsoft Imagine Cup Competition, Second Prize.</li>
+                          <li>VPBank SME Idea, Top 5.</li>
+                          <li>Coding Inspiration, Second Prize.</li>
+                          <li>Hasu: Social network for 50+.</li>
+                          <li>Egap: Smart agriculture solution.</li>
+                          <li>Polyco: Manufactory monitoring device and assets tracking.</li>
+                          <li>Sugoi: HOME - Real estate solution for real estate consultancy company in Japan, NEWS – Vietnam Japan e- magazine.</li>
+                          <li>sPhoton Chat: Enterprise internal communication application with built-in chatbot.</li>
+                          <li>sPhoton AI: The very first project under preparation for fund raising in 2020, a company AI assistant integrated in a messaging platform for SMEs.</li>
+                          <li>Hymetnet: IT solution to manage and analyze data from stations network all over Vietnam of Vietnam Institute of Meteorology, Hydrology and Climate Change. </li>
+                          <li>Kotopa: A vocabulary learning app on mobile.</li>
+                          <li>Icheck: A mobile app provides product information via Barcode for origin track and counterfeit prevention.</li>
+                          <li>XKanji: A Japanese - Vietnamese dictionary app using tesseract as the OCR module and Google services for handwriting recognition module.</li>
+                          <li>TDCH: Chinese handwriting recognition app (using neural network run on mobile device).</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/Andrew.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">ANDREW TRAN</div>
+                      <div class="slider__item__sub">CMO</div>
+                      <div class="slider__item__excerpt">
+                        Co-Founder Ecosapa Joint Stock Company.<br>
+                        CMO Paradise of Co-Founder SMT.<br>
+                        Co-Founder of sPhoton.
+                      </div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">ANDREW TRAN</h3>
+                      <p class="ourteamModal__sub">CMO</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>2017 - 2019: Owner Bigbrothers Software Development Company.</li>
+                          <li>Development of Share Holder Flex software.</li>
+                          <li>12 years in information systems Hopital.</li>
+                          <li>6 years of outside source development of Blockchain software.</li>
+                          <li>Co-Founder Ecosapa Joint Stock Company.</li>
+                          <li>CMO Paradise of Co-Founder SMT.</li>
+                          <li>Co-Founder of sPhoton.</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>University of Social Sciences and Humanities.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul>
+                          <li>Copyright of the Hospital Administration System.</li>
+                          <li>Copyright of System Smartapp Cloudserver.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/Hung_Nguyen.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">HUBERT NGUYEN</div>
+                      <div class="slider__item__sub">CGO</div>
+                      <div class="slider__item__excerpt">
+                        CBDO at Pixels-x Brand (under IGC company) and SKRICE Game Studio CO., LTD.(2D/3D Graphics Specialization Company).
+                      </div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">HUBERT NGUYEN</h3>
+                      <p class="ourteamModal__sub">CGO</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>2015 - 2017: R&D Department at CMC Infosec Company(Security Software Specialization Company).</li>
+                          <li>2017 - 2018: System Deployment - Administration at FPT Information System Company(Security Software Specialization Company).</li>
+                          <li>2018 - 2019: Account / Build Design Studio at LOON EYES Studio Joint Stock Company(2D/3D Graphics Specialization Company).</li>
+                          <li>2019 - 2021: Project Manager & Web Consultant at Time Communication Joint Stock Company(IMC Agency).</li>
+                          <li>2020 - Now: Brand Manager at ONUS Studio International Corporation.</li>
+                          <li>Now: CBDO at Pixels-x Brand (under IGC company) and SKRICE Game Studio CO., LTD.(2D/3D Graphics Specialization Company).</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>FPT University - Major in Information Security.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul class="mb-3">
+                          <li>Project Manager / Pitching / 3D Team Lead Coordinato and Develop marketing successfully for some projects:</li>
+                          <li>LOGA - Introduction.</li>
+                          <li>Aria Vung Tau.</li>
+                          <li>Ba Na hill Da Nang.</li>
+                          <li>Happy Home Ca Mau.</li>
+                          <li>Samsung R&D Center.</li>
+                          <li>HINODE CITY.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__item__wrap col-3" data-bs-toggle="modal" data-bs-target="#ourteamModal">
+                  <div class="slider__item">
+                    <div class="slider__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/team/Minh-le.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slider__item__meta">
+                      <div class="slider__item__title">MINH LE</div>
+                      <div class="slider__item__sub">GAME DIRECTOR</div>
+                      <div class="slider__item__excerpt">Game Director at sPhoton.</div>
+                    </div>
+                    <div class="js-slider-content slider__item--content d-none">
+                      <h3 class="ourteamModal__title">MINH LE</h3>
+                      <p class="ourteamModal__sub">GAME DIRECTOR</p>
+                      <div class="ourteamModal__excerpt">
+                        <p class="mb-2">Experience</p>
+                        <ul class="mb-3">
+                          <li>2016 - 2018: Game Designer at Senspark Game Company.</li>
+                          <li>2018 - 2020: Project Leader at HD Entertainment.</li>
+                          <li>2020 - 2021: Founder of Mystic Game Studio.</li>
+                          <li>2021 - Now: Game Director at sPhoton.</li>
+                        </ul>
+                        <p class="mb-2">Education</p>
+                        <ul class="mb-3">
+                          <li>Ho Chi Minh City University of Agriculture and Forestry.</li>
+                        </ul>
+                        <p class="mb-2">Achievements</p>
+                        <ul>
+                          <li>Self-publishing more than 10 games. In which, the game Universe Master received nearly 1 million downloads in just a few months. Besides, many other games can be mentioned such as:</li>
+                          <li>Mine Craft.</li>
+                          <li>Item Merge Quest.</li>
+                          <li>Brain Wipe.</li>
+                          <li>Get Rich 3D.</li>
+                          <li>Tank 1990.</li>
+                          <li>Shooter Hero Online.</li>
+                          <li>Flip The Table Online.</li>
+                          <li>Slope Down.</li>
+                          <li>Adventure Tom.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            <div class="flickity__slider__arrow">
+              <div class="flickity__button -prev">
+                <span>PREVIOUS</span>
+              </div>
+              <div class="flickity__button -next">
+                <span>NEXT</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <div class="home-group-ap">
+        <section class="home-advisors">
+          <div class="container">
+            <header class="sc__header text-center">
+              <h2 class="sc__header__title mb-0 wow fadeInUp">ADVISORS</h2>
             </header>
 
-            <div class="videoWrapper__mask">
-              <div class="ratio ratio-16x9 -center">
-                <video src="images/home-we-made.mp4" loop muted autoplay></video>
+            <div class="d-flex justify-content-center pt-3 wow fadeInUp">
+              <div class="el__item">
+                <a href="">
+                  <div class="el__item__thumb dnfix__thumb -contain">
+                    <img src="images/home-advisors-01.png" alt="" class="img-fluid mx-auto">
+                  </div>
+                </a>
               </div>
             </div>
 
           </div>
         </section>
 
-        <section class="home-tokenmoics">
-          <div class="container container-1300">
+        <section class="home-partners">
+          <div class="container">
             <header class="sc__header text-center">
-              <h2 class="sc__header__title">TOKENOMICS</h2>
-              <div class="sc__header__excerpt">Orbit token is the governance token of Orbit Metaverse, issued on Binance Smart Chain</div>
+              <h2 class="sc__header__title mb-0 wow fadeInUp">PARTNERS</h2>
             </header>
 
-            <div class="sc__content d-flex">
-                <div class="col--left">
-                  <div class="el__item -s1">
-                    <p>Seedround (2%):</p>
-                    <p><strong>20,000,000</strong></p>
+            <div class="d-flex justify-content-center pt-3 wow fadeInUp">
+              <div class="el__item">
+                <a href="">
+                  <div class="el__item__thumb dnfix__thumb -contain">
+                    <img src="images/home-partners-cm.png" alt="" class="img-fluid mx-auto">
                   </div>
-                  <div class="el__item -s2">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s3">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s4">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s5">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                </div>
-                <div class="col--center">
-                  <div class="el__box">
-                    <div class="el__box__wrap">
-                      <p class="el__box__title">MAX SUPPLY</p>
-                      <p class="el__box__sub">1 billion</p>
-                      <p class="el__box__excerpt">( 1.000.000.000 )</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col--right">
-                  <div class="el__item -s6">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s7">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s8">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s9">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                  <div class="el__item -s10">
-                    <div>
-                      <p>Seedround (2%):</p>
-                      <p><strong>20,000,000</strong></p>
-                    </div>
-                    <div class="el__item__circle"></div>
-                  </div>
-                </div>
+                </a>
+              </div>
             </div>
+
           </div>
         </section>
+
       </div>
 
       <footer class="footer">
+        <div class="container">
 
+          <div class="footer__logo text-center">
+            <a href="">
+              <img src="images/logo-footer.svg" alt="">
+            </a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="footer__title">CONTACT US</h3>
+              <p><a href="mailto:support@orbitmeta.io">Email: support@orbitmeta.io</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3 class="footer__title">ABOUT US</h3>
+              <p><a href="#">Document</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3 class="footer__title">JOIN OUR COMMUNITY</h3>
+
+              <ul class="footer__socical">
+                <li><a href=""><i class="icon-facebook"></i></a></li>
+                <li><a href=""><i class="icon-twitter"></i></a></li>
+                <li><a href=""><i class="icon-yotube"></i></a></li>
+                <li><a href=""><i class="icon-telegram"></i></a></li>
+                <li><a href=""><i class="icon-medium"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
       </footer>
 
       <nav id="menu__mobile" class="nav__mobile">
           <div class="nav__mobile__content">
             <ul class="nav__mobile--ul mb-5">
-              <li class="menu-item active"><a href="index.html">ポートフォリオ</a></li>
-              <li class="menu-item"><a href="about.html">私たちに関しては</a></li>
-              <li class="menu-item"><a href="process.html">プロセス</a></li>
-              <li class="menu-item"><a href="contact.html">コンタクト</a></li>
+              <li class="menu-item active"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="#">Games</a></li>
+              <li class="menu-item"><a href="#">Metaverse</a></li>
+              <li class="menu-item"><a href="#">Pitch Deck</a></li>
             </ul>
-            <a href="" class="nav__mobile__link">連絡する</a>
-
           </div>
       </nav>
+
+      <!-- Modal -->
+      <div class="modal fade ourteamModal" id="ourteamModal" tabindex="-1" aria-labelledby="ourteamModalLabel"
+           aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="ourteamModal-content modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body js-modal-body"></div>
+          </div>
+        </div>
+      </div>
+
+
     </div> <!-- .wrapper -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>

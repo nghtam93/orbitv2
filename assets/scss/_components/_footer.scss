@@ -1,64 +1,45 @@
 .footer{
 	position: relative;
-	padding: 100px 0;
-	font-size: 19px;
-	color: #000;
+	margin-top: -115px;
+	padding: 166px 0 48px;
+	color: #fff;
+	background: url(../img/footer-bg.png) no-repeat;
+	background-size:cover;
+	background-position:bottom center;
 	a{
-		color: #000;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+		color: rgba(255, 255, 255, .8);
 	}
-
-	.col--left{
-		display: flex;
-		flex-direction: column;
+	&__title{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0.365em;
+		color: #F601A3;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		margin-bottom: 12px;
 	}
-
-	&__item{
-
-		.font-poppins{
-			font-weight: 500;
-			font-size: 23px;
-		}
+	&__logo{
+		margin-bottom: 70px;
 	}
-
-	&__form{
-		&__title{
-			font-size: 60px;
-			font-weight: 800;
-			margin-bottom: 50px;
-		}
-		.-paperclip{
-			position: relative;
-			input{
-				padding-right:25px;
-			}
-			&:after{
-				content: '\e905';
-				font-family: 'icomoon';
-				position: absolute;
-				top: 15px;
-				right: 12px;
-				font-size: 20px;
-			}
-		}
-	}
-
 
 	&__socical{
-		ul{
-			display: flex;
-			align-items:center;
-		}
+		display: flex;
+		align-items:center;
 		li{
 			margin-bottom: 10px;
 			&:not(:last-child){
-				margin-right: 28px;
+				margin-right: 19px;
 			}
 		}
 		a{
 			position: relative;
 			display: block;
-			color: #000;
-			font-size: 20px;
+			color: #fff;
+			font-weight: 400;
+			font-size: 16px;
 			transition: all .5s;
 			&:hover{
 
@@ -67,46 +48,20 @@
 				position: relative;
 			}
 		}
-		.icon-ww{
-			display: block;
-			width: 29px;
-			height: 20px;
-			background:url(../img/wantedly.png) no-repeat;
-			background-size: contain;
-		}
 
 	}
 
-	&__address{
-
-		small{
-			font-size: 15px;
-			color: #C7C7C7;
-		}
-	}
 
 	@media (max-width: 1199px){
-		&__form__title {
-		    font-size: 38px;
-		}
+
 	}
 	@media (max-width: 991px){
-		padding: 40px 0;
+
 	}
 	@media (max-width: 767px){
 
 	}
 	@media (max-width: 575px){
-		&__form {
-		    font-size: 16px;
-		    &__title {
-			    font-size: 28px;
-			    margin-bottom: 30px;
-			}
-		}
-		&__item .font-poppins {
-		    font-size: 20px;
-		}
 
 	}
 }

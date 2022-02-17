@@ -15,8 +15,11 @@
     &__excerpt{
         color: #FFFFFF;
     }
-    @media (max-width: 1199px){
-
+    @media (max-width: 1399px){
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
     }
     @media (max-width: 991px){
 
@@ -108,3 +111,20 @@
 @keyframes shine{
     100%{left:125%}
 }
+
+/*ourteamModal*/
+.ourteamModal .modal-dialog{max-width:926px;}
+.ourteamModal .btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+.ourteamModal .btn-close:focus{box-shadow:none;}
+.ourteamModal-content{padding:80px 50px;border:0;}
+.ourteamModal__title{font-weight:normal;font-size:36px;line-height:43px;text-transform:uppercase;color:#471709;margin-bottom:10px;}
+.ourteamModal__sub{font-weight:normal;font-size:18px;line-height:22px;color:#B14C35;margin-bottom:30px;}
+.ourteamModal__excerpt{font-weight:normal;font-size:16px;line-height:22px;color:#B14C35;}
+.ourteamModal-content ul{list-style:disc;padding-left:15px;}

@@ -94,21 +94,72 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
+    /*home-intro*/
+    $('.home-intro .el__thumb').hover(function(e) {
+        $('.home-intro .el__thumb').removeClass('active')
+
+        imageUrl = $(this).data('src')
+
+        $(".home-intro").css("background-image", "url(" + imageUrl + ")");
+        $(this).addClass('active')
+    })
+
     /**/
+    // Your main div is characters-main
+    var paradigm_flkty = new Flickity('.paradigm__slider', {
+      autoPlay: true,
+      pauseAutoPlayOnHover: false,
+      wrapAround: true,
+      cellAlign: "left",
+      prevNextButtons: false,
+      pageDots: false
+    });
 
-     // Your main div is characters-main
-    var flkty = new Flickity('.paradigm__slider');
-
-    // Next and previous events of the characters-nav
     $(".home-paradigm .flickity__button.-next").on("click", function() {
-          // Changing items of the main div
-           flkty.next();
+           paradigm_flkty.next();
+    });
+    $(".home-paradigm .flickity__button.-prev").on("click", function() {
+          paradigm_flkty.previous();
     });
 
-    $(".home-paradigm .flickity__button.-prev").on("click", function() {
-          // Changing items of the main div
-          flkty.previous();
+    // Your main div is characters-main
+    var character_flkty = new Flickity('.character__slider');
+    $(".character__slider__wrap .flickity__button.-next").on("click", function() {
+           character_flkty.next();
     });
+    $(".character__slider__wrap .flickity__button.-prev").on("click", function() {
+          character_flkty.previous();
+    });
+
+    // Your main div is characters-main
+    var pet_flkty = new Flickity('.pet__slider');
+    $(".pet__slider__wrap .flickity__button.-next").on("click", function() {
+           pet_flkty.next();
+    });
+    $(".pet__slider__wrap .flickity__button.-prev").on("click", function() {
+          pet_flkty.previous();
+    });
+
+    // Your main div is characters-main
+    var ourteam_flkty = new Flickity('.ourteam__slider');
+    $(".ourteam__slider__wrap .flickity__button.-next").on("click", function() {
+           ourteam_flkty.next();
+    });
+    $(".ourteam__slider__wrap .flickity__button.-prev").on("click", function() {
+          ourteam_flkty.previous();
+    });
+
+
+    // Home ourteam
+    $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+      $('.js-flickity').flickity('resize');
+    })
+    $('.home-ourteam .slider__item__wrap[data-bs-toggle="modal"]').on("click",function(e) {
+        var content = $(this).find('.js-slider-content').html()
+        $('.js-modal-body').html(content)
+    })
+
+
 
 });
 
