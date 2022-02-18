@@ -24,6 +24,25 @@ $(document).ready(function(){
     });
 
 
+    change_video_home()
+    $( window ).resize(function() {
+      change_video_home()
+    });
+
+    function change_video_home(argument) {
+
+        var video_src = $('.js-home-video').data("pc")
+
+        if (window.matchMedia("(max-width: 575px)").matches) {
+           video_src = $('.js-home-video').data("mb")
+        }
+
+        $('.js-home-video video').attr("src", video_src)
+    }
+
+
+
+
     //-------------------------------------------------
     // Menu
     //-------------------------------------------------
@@ -59,7 +78,7 @@ $(document).ready(function(){
                 $('.header.-fix').removeClass('-menu-mb-active')
 
             } else {
-                // $('<div class="dnmenu-backdrop">').appendTo('body')
+
                 // $('body').addClass('modal-open').css("padding-right",ScrollBarWidth)
                 $(menu_id).addClass('active')
                 $(thiz).addClass('active')

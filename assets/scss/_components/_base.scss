@@ -75,6 +75,10 @@ strong{
     font-weight: 700;
 }
 
+.modal-open{
+    overflow: hidden;
+}
+
 .btn-style{
     position: relative;
     display: inline-block;
@@ -174,6 +178,7 @@ strong{
 // }
 .flickity-page-dots{
     bottom: -50px;
+    z-index: 1;
     .dot {
         background: #fff;
         opacity: .3;
@@ -220,7 +225,7 @@ strong{
     font-size: 18px;
     color: #FFFFFF;
     cursor: pointer;
-
+    z-index: 2;
     &.-prev{
         padding-left: 40px;
         &:before{

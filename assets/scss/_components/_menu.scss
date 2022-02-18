@@ -122,12 +122,12 @@
 .nav__mobile{
     display:block;
     position:fixed;
-    top:var(--header-height);
-    height:calc(100% - var(--header-height));
+    top:0;
+    height:100%;
     left:-380px;
     width:100%;
     opacity:0;
-    background:#fff;
+    background:#130E2E;
     transition:all .25s;
     z-index:998;
     font-weight: 400;
@@ -135,27 +135,6 @@
     pointer-events: none;
     overflow: auto;
 
-    &--close {
-        position: relative;
-        top: 2px;
-        cursor: pointer;
-        width: 25px;
-        height: 35px;
-        text-align: right;
-    }
-    &__link{
-        font-weight: 500;
-        color: #613FE5;
-    }
-    &__header{
-        display: flex;
-        align-items: center;
-        padding: 20px 50px;
-        color: #fff;
-        img{
-            max-height: 50px;
-        }
-    }
     &__content{
         position: relative;
         overflow-y:auto;
@@ -183,7 +162,7 @@
                 display: block;
                 position: relative;
                 font-size: 30px;
-                color: #000;
+                color: #fff;
                 padding: 0;
                 transition: all .5s;
                 &:hover{
@@ -192,12 +171,12 @@
             }
             &.active, &.current-menu-item, &.current_page_item, &:hover{
                 &>a{
-                    color: #000;
+                    color: #0cc3db;
                 }
             }
             &.active, &.current-menu-item, &.current_page_item{
                 &>a{
-                    font-weight:800;
+                    font-weight:700;
                 }
             }
         }
@@ -205,22 +184,6 @@
 
     /**/
     .sub-menu{display:none;}
-    // .nav__mobile--ul .sub-menu{
-    //     font-size:14px;
-    //     font-weight:500;
-    //     padding-left: 16px;
-    //     li{
-    //         &::before{
-    //             content:"";width:6px;height:6px;
-    //             background-color:#41BECE;position:absolute;top:13px;left:0;
-    //         }
-    //         a{
-    //             padding:4px 4px 4px 15px;
-    //         }
-    //     }
-
-    // }
-
     .nav__mobile__btn{
         position:absolute;top:5px;
         right:16px;
@@ -262,5 +225,5 @@
     display: block;
     cursor: pointer;
     font-size: 24px;
-    color: #fff;
+    color: #fff!important;
 }

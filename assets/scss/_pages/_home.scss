@@ -1229,6 +1229,9 @@
 
 	}
 	@media (max-width: 575px){
+		.home-header .ratio {
+		    min-height: 800px;
+		}
 		&-find-out{
 			.el__thumb {
 			    width: 120%;
