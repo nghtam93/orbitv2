@@ -1150,12 +1150,14 @@
 		}
 	}
 	@media (max-width: 767px){
+
 		&-paradigm{
 			.flickity__slider__arrow {
 			    padding: 0 0px;
 			}
 		}
 		&-intro{
+    		padding: 60px 0 40px;
 			.el__box {
 			    width: 500px;
 			    height: 500px;
@@ -1229,7 +1231,7 @@
 
 	}
 	@media (max-width: 575px){
-		.home-header .ratio {
+		&-header .ratio {
 		    min-height: 800px;
 		}
 		&-find-out{
@@ -1245,6 +1247,7 @@
 			}
 		}
 		&-intro{
+			padding: 40px 0 40px;
 			.el__meta {
 				position: relative;
 			    top: 120px;
