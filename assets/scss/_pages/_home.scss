@@ -137,8 +137,24 @@
 	}
 	&-paradigm{
 		position: relative;
+		&:before{
+			content: '';
+		    position: absolute;
+		    top: -23%;
+		    left: 0;
+		    width: 100%;
+		    height: 45%;
+		    pointer-events: none;
+		    z-index: 2;
+		    background: linear-gradient(179.81deg,rgba(48,76,155,0) 31.51%,#170731 49.31%,rgba(46,21,63,0.57) 77.28%,rgba(46,20,64,0) 99.83%);
+		}
+		.sc__wrap{
+
+		}
+
 		.flickity{
 			--bs-gutter-x: 0;
+			z-index: 1;
 		}
 
 		.slider__item{
@@ -217,15 +233,23 @@
 		background-repeat: no-repeat;
 		padding: 200px 0 120px;
 		transition: all .5s;
+		&:before{
+			content: '';
+		    position: absolute;
+		    top: -23%;
+		    left: 0;
+		    width: 100%;
+		    height: 45%;
+		    pointer-events: none;
+		    z-index: 1;
+		    background: linear-gradient(179.81deg,rgba(48,76,155,0) 31.51%,#170731 49.31%,rgba(46,21,63,0.57) 77.28%,rgba(46,20,64,0) 99.83%);
+		}
 		.el__wrap{
-			// position: absolute;
-			// top: 0;
-			// left: 0;
-			// width: 100%;
-			// height: 100%;
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			z-index: 2;
 		}
 		.el__box{
 			position: relative;
@@ -338,7 +362,17 @@
 		background: url(../img/home-ntfgallery-bg.jpg) no-repeat;
 		background-size: cover;
 		background-repeat: no-repeat;
-
+		&:before{
+			content: '';
+		    position: absolute;
+		    top: -22%;
+		    left: 0;
+		    width: 100%;
+		    height: 45%;
+		    pointer-events: none;
+		    z-index: 1;
+		    background: linear-gradient(179.81deg,rgba(255, 255, 255, 0) 31.51%,#362930 49.31%,rgba(46, 21, 63, .08) 77.28%,rgba(46,20,64,0) 99.83%);
+		}
 		.nav-pills{
 			margin-bottom: 60px;
 			.nav-item{
@@ -388,6 +422,10 @@
 		}
 		.el__slider{
 			width: 100vw;
+		}
+		.sc__content{
+			position: relative;
+			z-index: 3;
 		}
 
 		.flickity-page-dots{
@@ -654,7 +692,7 @@
 		.sc__content{
 			position: relative;
 			padding: 0 100px;
-			z-index: 1;
+			z-index: 3;
 			&:before{
 				content: '';
 				position: absolute;
@@ -746,7 +784,21 @@
 		padding: 100px 0 80px;
 		background:url(../img/home-ourteam-bg.png) no-repeat;
 		background-size:cover;
-
+		.sc__wrap{
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+		    content: '';
+		    position: absolute;
+		    top: -23%;
+		    left: 0;
+		    width: 100%;
+		    height: 45%;
+		    pointer-events: none;
+		    z-index: 1;
+		    background: linear-gradient(179.81deg, rgba(48,76,155,0) 31.51%, #170731 49.31%, rgba(46,21,63,0.57) 77.28%, rgba(46,20,64,0) 99.83%);
+		}
 		.sc__content{
 			position: relative;
 			padding-bottom: 70px;
@@ -842,9 +894,22 @@
 			background-position: bottom left;
 			pointer-events: none;
 		}
+		&:after {
+		    content: '';
+		    position: absolute;
+		    top: -23%;
+		    left: 0;
+		    width: 100%;
+		    height: 45%;
+		    pointer-events: none;
+		    z-index: 1;
+		    background: linear-gradient(179.81deg, rgba(48,76,155,0) 31.51%, #170731 49.31%, rgba(46,21,63,0.57) 77.28%, rgba(46,20,64,0) 99.83%);
+		}
 	}
 
 	&-advisors{
+		position: relative;
+    	z-index: 2;
 		padding: 100px 0 60px;
 		.el__item{
 			width: 290px;
@@ -855,6 +920,8 @@
 	}
 
 	&-partners{
+		position: relative;
+    	z-index: 2;
 		padding: 60px 0 200px;
 		.el__item{
 			width: 250px;
