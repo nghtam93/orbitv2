@@ -24,8 +24,15 @@
 			flex-direction: column;
 			z-index: 1;
 		}
+		.ratio{
+			min-height: 500px;
+		}
 		.el__thumb{
 			margin-bottom: 40px;
+			img{
+				width: auto;
+				max-height: 110px;
+			}
 		}
 		.el__excerpt{
 			font-weight: bold;
@@ -130,6 +137,10 @@
 	}
 	&-paradigm{
 		position: relative;
+		.flickity{
+			--bs-gutter-x: 0;
+		}
+
 		.slider__item{
 			&__wrap{
 				position: relative;
@@ -163,6 +174,7 @@
 			}
 			&__thumb{
 				padding-top:51.5%;
+				  min-height: 600px;
 			}
 			&__title{
 				font-family: UTM Akashi;
@@ -240,7 +252,7 @@
 		    left: 0;
 		    right: 0;
 		    width: 100%;
-		    height: 100%;
+		    height: calc( 100% - 200px);
 		}
 
 		.el__title{
@@ -250,6 +262,9 @@
 			line-height: 82px;
 			text-align: center;
 			color: #38D3EC;
+			background: -webkit-linear-gradient(270deg,#38D3EC 42.5%, #0292A9 90.3%);
+			-webkit-background-clip: text;
+    		-webkit-text-fill-color: transparent;
 		    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		    margin-bottom: 40px;
 		}
@@ -296,9 +311,11 @@
 					animation: spinner-rotate 2s ease-in-out infinite;
 				}
 			}
-			&--1{
+			&--1, &--3{
 				top: auto;
 			    bottom: 110px;
+			}
+			&--1{
 			    left: 70px;
 			    right: auto;
 			}
@@ -309,8 +326,6 @@
 				margin: 0 auto;
 			}
 			&--3{
-				top: auto;
-				bottom: 110px;
 				left: auto;
 				right: 70px;
 			}
@@ -380,6 +395,11 @@
 		}
 		.slider__item{
 			position: relative;
+			&:hover{
+				.dnfix__thumb{
+					transform: translateY(10px);
+				}
+			}
 			&__wrap{
 				width: 280px;
 				.dnfix__thumb{
@@ -388,6 +408,7 @@
 			}
 			&__thumb{
 				position: relative;
+				animation:lightAnimation2 2s ease-in-out infinite;
 				&:before{
 					content: '';
 					position: absolute;
@@ -401,6 +422,10 @@
 					border-radius: 16px;
 					transform: skewX(-5deg);
 				}
+			}
+			&__meta {
+			    left: -4%;
+			    position: relative;
 			}
 			&__title{
 				position: relative;
@@ -452,8 +477,11 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: top center;
-			z-index: -1;
+			z-index: 1;
 			pointer-events: none;
+		}
+		.sc__header{
+			z-index: 2;
 		}
 		.sc__header__title{
 			font-size: 64px;
@@ -535,8 +563,8 @@
 				background-size: contain;
 				z-index: -1;
 				pointer-events: none;
-				-webkit-animation: 3s linear infinite spinner-border;
-    			animation: 3s linear infinite spinner-border, lightAnimation 1s ease-in-out infinite;
+				-webkit-animation: 50s linear infinite spinner-border;
+    			animation: 50s linear infinite spinner-border, lightAnimation 1s ease-in-out infinite;
 			}
 			&__title{
 				font-weight: 900;
@@ -598,6 +626,13 @@
 			background-position:bottom center;
 			z-index: -1;
 			pointer-events: none;
+		}
+		.sc__header__thumb{
+			animation:Mousex 2.5s ease-in-out infinite;
+			img{
+				width: auto;
+				height: 169px;
+			}
 		}
 		.sc__wrap{
 			position: relative;
@@ -735,6 +770,7 @@
 			padding: 0;
 		}
 		.slider__item{
+			position: relative;
 			padding: 48px 18px;
 			font-size: 14px;
 			line-height: 21px;
@@ -742,6 +778,26 @@
 			background: rgba(255, 255, 255, 0.07);
 			backdrop-filter: blur(146px);
 			-webkit-backdrop-filter: blur(146px);
+			&:before, &:after{
+		        content: '';
+		        position: absolute;
+		        width: 5px;
+		        height: 5px;
+		        transition: all .3s;
+		    }
+		    &:before{
+		        bottom: 0;
+		        left: 0;
+		        border-left: 1px solid #fff;
+		        border-bottom: 1px solid #fff;
+		    }
+		    &:after{
+		        top: 0;
+		        right: 0;
+		        border-top: 1px solid #fff;
+		        border-right: 1px solid #fff;
+		    }
+
 			&__wrap{
 
 			}
@@ -931,6 +987,305 @@
 				min-height: 126px;
 			}
 		}
+		&-nftgallery{
+			.flickity-page-dots {
+			    left: -50px;
+			}
+		}
+	}
+	@media (max-width: 1199px){
+		&-header{
+			.el__thumb img {
+			    max-height: 80px;
+			}
+		}
+		&-find-out{
+			.el__title {
+			    font-size: 68px;
+			    line-height: 68px;
+			    margin-bottom: 24px;
+			}
+			.el__sub {
+			    font-size: 18px;
+			    line-height: 26px;
+			    margin-bottom: 24px;
+			}
+			.el__excerpt{
+				margin-bottom: 16px;
+			}
+		}
+		&-paradigm{
+			.slider__item__title {
+			    font-size: 38px;
+			    line-height: 38px;
+			}
+			.slider__item__sub {
+			    font-size: 18px;
+			    line-height: 26px;
+			}
+		}
+		&-intro{
+			padding: 80px 0 40px;
+			.el__box {
+			    width: 580px;
+			    height: 580px;
+			}
+			.el__meta {
+			    top: 160px;
+			    height: calc( 100% - 160px);
+			}
+			.el__excerpt {
+			    font-size: 16px;
+			    line-height: 28px;
+			}
+			.el__thumb--1, .el__thumb--3 {
+			    bottom: 80px;
+			}
+		}
+		&-nftgallery{
+			padding: 80px 0 60px;
+			.flickity-page-dots {
+			    left: -0.75rem;
+			}
+		}
+		&-we-made{
+			&:before {
+			    height: 110px;
+			}
+		}
+		&-tokenmoics{
+			.el__box{
+				width: 380px;
+				height: 380px;
+				&:before {
+				    width: 600px;
+				    height: 600px;
+				    top: -110px;
+				    left: -110px;
+				}
+				&__title {
+				    font-size: 20px;
+				    line-height: 30px;
+				}
+				&__sub {
+				    font-size: 60px;
+				    line-height: 74px;
+				}
+				&__excerpt {
+				    font-size: 14px;
+				    line-height: 20px;
+				}
+			}
+		}
+	}
+	@media (max-width: 991px){
+		&-header{
+			.el__thumb img {
+			    max-height: 60px;
+			}
+		}
+		&-find-out{
+			padding: 100px 0 50px;
+			.el__wrap{
+				position: relative;
+			}
+			.el__title {
+			    font-size: 48px;
+			    line-height: 58px;
+			}
+			.el__excerpt {
+			    font-size: 14px;
+			    line-height: 21px;
+			}
+			.el__sub {
+			    font-size: 16px;
+			    line-height: 24px;
+			}
+		}
+		&-paradigm{
+			.slider__item__meta{
+				max-width:93%;
+				&:before {
+				    transform: skewX(0);
+				}
+			}
+			.flickity__button {
+			    font-size: 16px;
+			    background: rgba(255, 255, 255, 0.11);
+			    border-radius: 8px;
+			    &.-next{
+			    	&:before {
+					    top: 5px;
+					    right: 20px;
+					}
+					&:after {
+					    top: 5px;
+					    right: 6px;
+					}
+			    }
+			    &.-prev{
+			    	&:before {
+					    top: 5px;
+    					left: 20px;
+					}
+					&:after {
+					    top: 5px;
+					    left: 6px;
+					}
+			    }
+
+			}
+		}
+
+		&-tokenmoics{
+			padding-bottom: 50px;
+			.sc__content{
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			.col--center {
+				width: 100%;
+			    margin-bottom: 50px;
+			}
+		}
+	}
+	@media (max-width: 767px){
+		&-paradigm{
+			.flickity__slider__arrow {
+			    padding: 0 0px;
+			}
+		}
+		&-intro{
+			.el__box {
+			    width: 500px;
+			    height: 500px;
+			}
+			.el__title {
+    			font-size: 38px;
+			    line-height: 48px;
+			    margin-bottom: 24px;
+			}
+			.el__excerpt {
+			    font-size: 14px;
+			    line-height: 26px;
+			}
+			.el__thumb {
+			    width: 80px;
+			    height: 80px;
+			    &--1, &--3 {
+				    bottom: 60px;
+				}
+			}
+		}
+		&-find-out{
+			padding: 100px 0 270px;
+			.el__meta {
+			  max-width: 100%;
+			}
+		}
+		&-we-made{
+			&:before {
+			    height: 90px;
+			}
+			.sc__header__title {
+			    font-size: 38px;
+			    padding-top: 20px;
+			}
+			.videoWrapper__mask {
+			    padding: 8px;
+			}
+		}
+		&-roadmap {
+		    padding: 40px 0 60px;
+		    .sc__content {
+			    padding: 0 50px;
+			}
+		}
+		&-ourteam{
+    		padding: 60px 0 40px;
+
+			.flickity-page-dots {
+			    display: none;
+			}
+		}
+		&-nftgallery {
+		    padding: 60px 0 40px;
+		    .nav-pills {
+			    margin-bottom: 20px;
+			}
+		}
+		&-advisors {
+		    padding: 60px 0 40px;
+		}
+		&-partners {
+		    padding: 60px 0 300px;
+		}
+		&-group-ap{
+			&:before {
+			    width: 100%;
+			    height: 290px;
+			}
+		}
+
+	}
+	@media (max-width: 575px){
+		&-find-out{
+			.el__thumb {
+			    width: 120%;
+			    padding-top: 80%;
+			}
+		}
+		&-paradigm{
+			.slider__item__meta {
+			    max-width: calc( 100% - 32px);
+			    padding: 24px;
+			}
+		}
+		&-intro{
+			.el__meta {
+				position: relative;
+			    top: 120px;
+			    height: calc( 100% - 120px);
+			}
+			.el__thumbs {
+				margin-top: 16px;
+			    display: flex;
+			    padding: 0 30px;
+			}
+			.el__thumb {
+			    position: relative;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    flex: 0 0 auto;
+			}
+		}
+		&-we-made{
+			&:before {
+			    height: 64px;
+			}
+		}
+		&-tokenmoics{
+			.el__box{
+				width: 320px;
+    			height: 320px;
+    			&:before {
+				    width: 480px;
+				    height: 480px;
+				    top: -80px;
+				    left: -80px;
+				}
+			}
+			.col--left, .col--right {
+			    width: 50%;
+			}
+			.el__item__circle {
+			    margin-right: 8px;
+			}
+			.el__item{
+				margin-bottom: 16px;
+			}
+		}
 	}
 	@media (min-width: 576px){
 		&-tokenmoics{
@@ -940,6 +1295,7 @@
 					&__circle{
 						order: 2;
 						margin-left: 16px;
+						margin-right: 0;
 					}
 				}
 			}
