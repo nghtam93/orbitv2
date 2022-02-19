@@ -24,10 +24,10 @@ $(document).ready(function(){
     });
 
 
-    change_video_home()
-    $( window ).resize(function() {
-      change_video_home()
-    });
+
+    $(window).on("load resize", function() {
+        change_video_home()
+    })
 
     function change_video_home(argument) {
 

@@ -67,9 +67,9 @@
 // STAR ANIMATION
 
 @function multiple-box-shadow($n) {
-  $value: "#{random(2500)}px #{random(2500)}px #38D3EC";
+  $value: "#{random(2500)}px #{random(2500)}px #f69842";
   @for $i from 2 through $n {
-    $value: "#{$value} , #{random(2500)}px #{random(2500)}px #38D3EC";
+    $value: "#{$value} , #{random(2500)}px #{random(2500)}px #f69842";
   }
 
   @return unquote($value);
