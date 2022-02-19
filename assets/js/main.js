@@ -31,13 +31,19 @@ $(document).ready(function(){
 
     function change_video_home(argument) {
 
-        var video_src = $('.js-home-video').data("pc")
+        $( ".js-ratio--video").each(function( index ) {
+          console.log( $(this).data("pc") );
 
-        if (window.matchMedia("(max-width: 575px)").matches) {
-           video_src = $('.js-home-video').data("mb")
-        }
+          var video_src = $(this).data("pc")
 
-        $('.js-home-video video').attr("src", video_src)
+            if (window.matchMedia("(max-width: 575px)").matches) {
+               video_src = $(this).data("mb")
+            }
+            $(this).find('video').attr("src", video_src)
+
+        });
+
+
     }
 
 
