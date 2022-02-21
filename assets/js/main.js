@@ -26,7 +26,10 @@ $(document).ready(function(){
 
 
     $(window).on("load resize", function() {
-        change_video_home()
+        setTimeout(function(){
+            change_video_home()
+        }, 200);
+
     })
 
     function change_video_home(argument) {
@@ -42,11 +45,7 @@ $(document).ready(function(){
             $(this).find('video').attr("src", video_src)
 
         });
-
-
     }
-
-
 
 
     //-------------------------------------------------
