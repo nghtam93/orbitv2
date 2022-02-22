@@ -4,10 +4,10 @@ $(document).ready(function(){
     new WOW().init();
 
     // Stick header
-    if ( $('.header').offset().top >= 100 ) $('.header').addClass("is-sticky");
-    $(window).scroll(function(){
-        $(this).scrollTop()>10?$('.header').addClass("is-sticky"):$('.header').removeClass("is-sticky")
-    })
+    // if ( $('.header').offset().top >= 100 ) $('.header').addClass("is-sticky");
+    // $(window).scroll(function(){
+    //     $(this).scrollTop()>10?$('.header').addClass("is-sticky"):$('.header').removeClass("is-sticky")
+    // })
 
     /*----Get Header Height ---*/
     function get_header_height() {
@@ -35,8 +35,6 @@ $(document).ready(function(){
     function change_video_home(argument) {
 
         $( ".js-ratio--video").each(function( index ) {
-          console.log( $(this).data("pc") );
-
           var video_src = $(this).data("pc")
 
             if (window.matchMedia("(max-width: 575px)").matches) {
@@ -136,7 +134,8 @@ $(document).ready(function(){
       wrapAround: true,
       cellAlign: "left",
       prevNextButtons: false,
-      pageDots: false
+      pageDots: false,
+      cellSelector: ".slider__item__wrap"
     });
 
     $(".home-paradigm .flickity__button.-next").on("click", function() {

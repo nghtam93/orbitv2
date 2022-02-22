@@ -328,39 +328,12 @@ strong{
 /**/
 
 .btn{
-    position:relative;
-    min-width:160px;
-    text-align:center;
-    color: #613FE5;
 
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 12px;
-    transition:all .5s;
+}
 
-    border: 2px solid #613FE5;
-    box-sizing: border-box;
-    border-radius: 70.5px;
-
-    &:focus{
-        box-shadow: none;
-    }
-    &:hover{
-        color: #fff;
-        background: #613FE5;
-        &:before{
-            opacity: 1;
-            width: 100%;
-        }
-    }
-
-    @media (max-width: 575px){
-        padding: 6px 8px;
-        font-size: 14px;
-        line-height: 24px;
-        min-width: 100px;
-    }
+.col-300{
+    flex: 0 0 auto;
+    width: 300px;
 }
 
 
@@ -431,10 +404,7 @@ strong{
     .container {
         max-width: 1124px;
     }
-    .container-fluid {
-        padding-left: 50px;
-        padding-right:50px;
-    }
+
     .gx-lg-120{
         --bs-gutter-x: 120px;
     }
@@ -443,10 +413,7 @@ strong{
     .container-1300{
         max-width: 1324px;
     }
-    .container-fluid {
-        padding-left: 100px;
-        padding-right:100px;
-    }
+
 }
 
 @media (min-width: 1600px){

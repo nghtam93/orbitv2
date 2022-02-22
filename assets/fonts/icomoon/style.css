@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ydxdoc');
-  src:  url('fonts/icomoon.eot?ydxdoc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ydxdoc') format('truetype'),
-    url('fonts/icomoon.woff?ydxdoc') format('woff'),
-    url('fonts/icomoon.svg?ydxdoc#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?oi5y3v');
+  src:  url('fonts/icomoon.eot?oi5y3v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?oi5y3v') format('truetype'),
+    url('fonts/icomoon.woff?oi5y3v') format('woff'),
+    url('fonts/icomoon.svg?oi5y3v#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e909";
+}
+.icon-category:before {
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-wallet:before {
+  content: "\e90d";
+}
+.icon-arrow2-left:before {
+  content: "\e90e";
+}
+.icon-arrow2-up:before {
+  content: "\e90f";
+}
+.icon-market-place:before {
+  content: "\e90b";
+}
 .icon-dots-menu:before {
   content: "\e908";
 }

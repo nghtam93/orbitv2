@@ -1,0 +1,132 @@
+.page__header{
+	padding: 20px 0;
+	&__logo{
+		img{
+			width: auto;
+			max-height: 30px;
+		}
+	}
+}
+
+.btn__marketplace{
+	background: linear-gradient(86.77deg, #28224B 3.16%, #2F275C 95.88%);
+	border-radius: 16px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+	padding: 8px 20px;
+	&:before{
+		content: "\e90b";
+		font-family: icomoon;
+		color: #12C2D9;
+		margin-right: 8px;
+	}
+	&.-connect{
+		background: linear-gradient(88.33deg, #561484 0.81%, #741088 99.62%);
+		&:before{
+			content: "\e90d";
+			color: #fff;
+		}
+	}
+}
+
+.widget-area{
+	border-right: 1px solid #2F2A49;
+	.sidebar__header{
+		padding: 40px 24px;
+		border-bottom: 1px solid #2F2A49;
+		li{
+			&:not(:last-child){
+				margin-bottom: 16px;
+			}
+			&.active, &:hover{
+				a{
+					color: #22A9BB;
+				}
+			}
+		}
+		a{
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 27px;
+			color: #FFFFFF;
+			transition: color .25s;
+		}
+	}
+}
+
+.market-sidebar__header{
+	.el__label{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 27px;
+		color: #FFFFFF;
+	}
+	.el__reset{
+		border: 0;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 21px;
+		color: #898696;
+	}
+}
+
+.sbmaket__search{
+	&__content {
+	    position: relative;
+
+	}
+	&__field{
+		background: #221D3E;
+	    border: 0;
+	    border-radius: 16px;
+	    font-size: 14px;
+	    padding: 12px 16px 12px 48px;
+	    line-height: 22px;
+	    color: #fff;
+	    &::placeholder{
+	    	color: rgba(255, 255, 255, .2);
+	    }
+	    &:focus{
+	    	background: transparent;
+	    	color: #fff;
+	    }
+
+	}
+	&__btn {
+	    position: absolute;
+	    top: 7px;
+	    left: 10px;
+	    width: 24px;
+	    height: 24px;
+	    border: 0;
+    	background: transparent;
+	    &::before {
+	    	content: "\e909";
+		    width: 24px;
+		    height: 24px;
+		    font-family: icomoon;
+		    color: #fff;
+	    }
+	}
+}
+
+.market__item{
+	background: #181236;
+	border: 1px solid #2F2A49;
+	border-radius: 16px;
+	&__meta{
+		padding: 12px;
+		color: #F9F9F9;
+	}
+	&__thumb {
+	    max-width: 155px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.dnfix__thumb{
+		padding-top: 126%;
+	}
+}

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Orbit meta v2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body class="">
+
+    <header class="page__header">
+      <div class="container-fluid d-flex align-items-center">
+
+        <div class="flex-grow-1 d-flex align-items-center">
+
+          <a href="index.html" class="page__header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              App
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+
+          <a href="" class="btn btn__marketplace">Marketplace</a>
+        </div>
+        <div class="ms-auto">
+          <a href="" class="btn btn__marketplace -connect">Connect Wallet</a>
+          <a href="" class=""><span class="icon-user"></span> Login</a>
+        </div>
+
+
+      </div>
+    </header>
+
+    <div class="wrap__page">
+        <div class="container-full">
+          <div class="d-flex">
+            <div class="col-300">
+              <aside class="widget-area widget__left widget__fix">
+                <div class="sidebar__inner">
+                  <div class="sidebar__header">
+                      <ul>
+                        <li class="active"><a href="">Characters</a></li>
+                        <li><a href="">Pets</a></li>
+                        <li><a href="">Treasure Combo</a></li>
+                      </ul>
+                  </div>
+                  <div class="widget p-4">
+                    <form action="">
+                        <ul class="market-sidebar__header mb-3">
+                          <li class="d-flex align-items-center">
+                            <div class="el__label">Filter</div>
+                            <div class="el__reset js-reset-market ms-auto">Reset</div>
+                          </li>
+                        </ul>
+
+                        <div class="sbmaket-widget sbmaket__search">
+                          <div class="sbmaket__search__content">
+                            <input type="text" name="s" class="sbmaket__search__field form-control" placeholder="Search" autocomplete="off" >
+                            <button class="sbmaket__search__btn"></button>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <div class="sbmaket-widget sbmaket__rarity">
+
+                          <div class="sbmaket-widget__header">
+                            <h3 class="sbmaket-widget__title">Grade</h3>
+                          </div>
+                          <ul class="sbmaket__radio">
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-01" name="sbmaket__rarity" value="Normal" checked>
+                              <label for="sbmaket__rarity-01">Normal</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-02" name="sbmaket__rarity" value="Rare">
+                              <label for="sbmaket__rarity-02">Rare</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-03" name="sbmaket__rarity" value="Epic">
+                              <label for="sbmaket__rarity-03">Epic</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-04" name="sbmaket__rarity" value="Legendary">
+                              <label for="sbmaket__rarity-04">Legendary</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="sbmaket__rarity-05" name="sbmaket__rarity" value="Mythical">
+                              <label for="sbmaket__rarity-05">Mythical</label>
+                            </li>
+                          </ul>
+                        </div><!-- .sbmaket-widget -->
+
+                        <div class="sbmaket-widget sbmaket__star">
+                          <div class="sbmaket-widget__header d-flex align-items-center">
+                            <h3 class="sbmaket-widget__title">Star</h3>
+                            <div class="star__wrap ms-auto">
+                                <input type="range" value="1" step="1" id="star1">
+                                <div data-rateit-backingfld="#star1" class="rateit -icomoon d-flex align-items-center"  data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-starwidth="26" data-rateit-starheight="26" data-rateit-min="0" data-rateit-max="3"></div>
+                            </div>
+                          </div>
+                        </div> <!-- .sbmaket-widget -->
+                      </form>
+
+                  </div>
+                </div>
+              </aside><!-- #secondary -->
+            </div>
+            <div class="w-100 flex-grow-1 p-3">
+
+              <div class="">
+                <div>613.767 characters</div>
+                <div>
+                  <span>Sort by</span>
+                  <div class="btn-group">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                      Clickable inside
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                      <li><a class="dropdown-item" href="#">Lowest Price</a></li>
+                      <li><a class="dropdown-item" href="#">Menu item</a></li>
+                      <li><a class="dropdown-item" href="#">Menu item</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row row-cols-md-6 row-cols-xl-4 row-cols-xxl-6">
+                <div class="col">
+                  <div class="market__item -character">
+                    <a href="character-detail.html" class="market__item__wrap">
+                      <div class="market__item__meta">
+                        <div class="market__item__title d-flex">Orbit <span class="market__item__id">#4426465</span>
+                          <div class="market__item__star ms-auto">
+                            <img src="assets/img/star.svg" alt="">
+                            <img src="assets/img/star.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="market__item__thumb">
+                          <div class="dnfix__thumb -contain">
+                            <img src="images/character/nft-gallery-07.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="market__item__price">
+                        <span class="amount -price1">Ξ 0.02</span>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="col">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/character/nft-gallery-02.png" alt="">
+                      </div>
+                    </div>
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Maya</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/character/nft-gallery-02.png" alt="">
+                      </div>
+                    </div>
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Maya</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/character/nft-gallery-02.png" alt="">
+                      </div>
+                    </div>
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Maya</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/character/nft-gallery-02.png" alt="">
+                      </div>
+                    </div>
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title">Maya</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
