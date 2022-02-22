@@ -75,6 +75,33 @@ strong{
     font-weight: 700;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #130E2E;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #221D3E;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #221D3E;
+}
+
+.font14{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 .modal-open{
     overflow: hidden;
 }
