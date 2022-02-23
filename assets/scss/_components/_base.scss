@@ -34,7 +34,7 @@ body {
     line-height: normal;
     position: relative;
     background: #130E2E;
-    --header-height:85px;
+    --header-height:70px;
 }
 
 a, a:hover {
@@ -77,7 +77,7 @@ strong{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   border-radius: 8px;
 }
 
@@ -102,7 +102,7 @@ strong{
     line-height: 1.5;
 }
 
-.modal-open{
+.modal-open, .filter-open{
     overflow: hidden;
 }
 
@@ -377,11 +377,14 @@ strong{
     }
 }
 @media (max-width: 991px){
-    body {
-        --header-height: 65px;
-    }
 }
 
+@media (max-width: 767px){
+    body{
+        --header-height: 49.9844px;
+    }
+
+}
 @media (max-width: 575px){
     .input-style {
         font-size: 16px;

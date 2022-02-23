@@ -19,7 +19,8 @@
 
 
 .widget-area{
-	height: 100%;
+	height: calc( 100vh - 70px);
+   	overflow: auto;
 	border-right: 1px solid #2F2A49;
 	font-size: 14px;
     line-height: 21px;
@@ -61,12 +62,20 @@
 			transition: color .25s;
 		}
 	}
+	&__close{
+		display: flex;
+	    justify-content: end;
+	}
+	@media (max-width: 767px){
+		height: 100%;
+   		overflow: inherit;
+	}
 }
 .market{
 	&__content{
-
+		height: calc( 100vh - 70px);
+    	overflow: auto;
 		padding: 40px 24px;
-		// padding: 0 110px;
 		&__top{
 			max-width: 1400px;
 			margin: 0 auto;
@@ -83,8 +92,6 @@
 			width: 220px;
 		}
 	}
-
-
 
 	&-sidebar__header{
 		.el__label{
@@ -127,7 +134,7 @@
 		}
 		&__btn {
 		    position: absolute;
-		    top: 7px;
+		    top: 12px;
 		    left: 10px;
 		    width: 24px;
 		    height: 24px;
@@ -210,9 +217,6 @@
 		}
 	}
 
-
-
-
 	&__item{
 		background: #181236;
 		border: 1px solid #2F2A49;
@@ -230,7 +234,12 @@
 		    max-width: 155px;
 		    width: 100%;
 		    margin: 18px auto 0;
+		    .ratio{
+				--bs-aspect-ratio: 126%;
+			}
+
 		}
+
 		.dnfix__thumb{
 			padding-top: 126%;
 		}
@@ -286,16 +295,32 @@
 		}
 	}
 	@media (max-width: 767px){
+
+		&__mb{
+			position: sticky;
+			-webkit-position: sticky;
+			top: var(--header-height);
+			background: #130e2e;
+			z-index: 1;
+			border-bottom: 1px solid #2f2a49;
+		}
+		&__content {
+		    height: 100%;
+		    overflow: inherit;
+		    padding-top: 16px;
+		}
 		&__sidebar {
-			position: absolute;
+			position: fixed;
 			pointer-events:none;
 			background:#130e2e;
 			z-index: -1;
 			opacity: 0;
 			width: 100%;
+			top: 0;
 			left: -100%;
-			min-height: 100vh;
 			transition: all .5s;
+			height: 100%;
+			overflow: auto;
 			&.active{
 				pointer-events:inherit;
 				z-index: 3;

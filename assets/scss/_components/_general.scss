@@ -115,6 +115,18 @@
             left: -100px!important;
         }
     }
+    @media (max-width: 767px){
+        position: sticky;
+        -webkit-position: sticky;
+        top: 0;
+        z-index: 2;
+        &__logo {
+            padding: 10px 60px 10px 0;
+        }
+        .menu-mb__btn {
+            font-size: 16px;
+        }
+    }
 }
 // Effect
 

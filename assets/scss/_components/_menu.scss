@@ -203,6 +203,13 @@
         &.active{
             right: 0;
         }
+        .nav__mobile__close{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 18px;
+            z-index: 2;
+        }
         .nav__mobile__content {
             justify-content: start;
             text-align: left;
@@ -279,7 +286,7 @@
 
 .menu-mb__btn{
     position: relative;
-    display: block;
+    display: flex;
     cursor: pointer;
     font-size: 24px;
     color: #fff!important;
