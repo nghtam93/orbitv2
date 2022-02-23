@@ -97,6 +97,15 @@ strong{
   background: #221D3E;
 }
 
+.ic-binance{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/binance-coin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
 .font14{
     font-size: 14px;
     line-height: 1.5;
@@ -437,6 +446,11 @@ strong{
 
     .gx-lg-120{
         --bs-gutter-x: 120px;
+    }
+}
+@media (min-width: 1300px){
+    .container-1200{
+        max-width: 1200px;
     }
 }
 @media (min-width: 1400px){
