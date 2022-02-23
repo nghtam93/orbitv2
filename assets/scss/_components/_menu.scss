@@ -209,6 +209,7 @@
             right: 15px;
             font-size: 18px;
             z-index: 2;
+            cursor: pointer;
         }
         .nav__mobile__content {
             justify-content: start;
@@ -223,6 +224,11 @@
             a{
                 display: inline-block;
                 font-size: 14px;
+            }
+            .sub-menu{
+                li{
+                    padding: 2px 12px;
+                }
             }
         }
     }

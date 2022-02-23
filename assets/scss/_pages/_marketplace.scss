@@ -62,6 +62,44 @@
 			transition: color .25s;
 		}
 	}
+	.sub-menu{
+		display: none;
+		padding: 10px 0 0px 24px;
+	}
+	.active{
+		.togglez{
+	        &:after{
+	            opacity: 0;
+	        }
+	    }
+	}
+	.togglez{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+        &:before{
+            content: '';
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #59566C;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: calc(50% - 1px);
+            width: 2px;
+            height: 100%;
+            background: #59566C;
+            transition: all .5s;
+        }
+    }
 	&__close{
 		display: flex;
 	    justify-content: end;
@@ -213,6 +251,7 @@
 	}
 	&__checkbox{
 		li{
+			position: relative;
 			margin-bottom: 8px;
 		}
 	}
@@ -266,6 +305,8 @@
 			color: #DDA30D
 		}
 		&__price{
+			display: flex;
+    		align-items: center;
 			padding: 13px 12px;
 			font-weight: bold;
 			font-size: 16px;

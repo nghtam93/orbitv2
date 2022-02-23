@@ -1,11 +1,5 @@
 $(document).ready(function(){
 
-    // Stick header
-    // if ( $('.header').offset().top >= 100 ) $('.header').addClass("is-sticky");
-    // $(window).scroll(function(){
-    //     $(this).scrollTop()>10?$('.header').addClass("is-sticky"):$('.header').removeClass("is-sticky")
-    // })
-
     /*----Get Header Height ---*/
     function get_header_height() {
         var header_sticky = $("header").outerHeight()
@@ -191,6 +185,15 @@ $(document).ready(function(){
         $('body').toggleClass('filter-open')
 
     })
+
+    // Widget
+
+    var e=$(".market__checkbox");
+    e.find(".has-children>label").after('<div class="togglez"><i></i></div>'),
+    e.find(".togglez").on("click",function(e){e.stopPropagation(),
+    $(this).parent().find("ul.sub-menu").is(":visible")?$(this).parent().removeClass("active"):$(this).parent().addClass("active"),
+    $(this).parent().find("ul.sub-menu").first().slideToggle()})
+
 
 });
 
