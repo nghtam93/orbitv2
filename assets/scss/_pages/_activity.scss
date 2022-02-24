@@ -1,0 +1,246 @@
+
+.activity__box{
+	margin-bottom:30px;
+	&__title{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 27px;
+		color: #12C2D9;
+		margin-bottom: 18px;
+	}
+	&__item{
+
+	}
+	.el__item{
+		position:relative;
+		display:flex;
+		align-items:center;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color:rgba(252,252,252,.7);
+
+		&:not(:last-child){margin-bottom:24px;}
+		&__date{
+			flex:0 0 auto;
+			width:38px;
+			margin-right:16px;
+			font-size: 14px;
+			line-height: 20px;
+			color: #716E82;
+
+		}
+		&:not(:last-child):before{width:2px;height:100%;content:"";position:absolute;top:38px;left:18px;background:linear-gradient(180deg,#C4C4C4 0%,rgba(247,247,247,0) 100%);opacity:0.2;}
+		&__meta{flex-grow:1;}
+		&__thumb{flex:0 0 auto;width:54px;padding-top:54px;margin-right:16px;}
+		&__title{
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			color: #FCFCFC;
+			margin-bottom: 6px;
+		}
+		&__share{
+			display:inline-block;font-size:16px;margin-left:8px;color:#716E82;
+			position: relative;
+    		top: 2px;
+		}
+	}
+
+}
+
+
+/**/
+.modal-s1.-sellorbit{
+
+	.nav-tabs{
+		border-bottom:0;
+		.nav-link{
+			margin-bottom:0;border:1px solid #9657E9;width:100%;
+			border-radius:16px;
+			padding:10px 12px;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 27px;
+			color: #FBFBFB;
+		}
+		span{
+			position:relative;
+			&:before{
+				position: absolute;
+			    top: 3px;
+			    left: -28px;
+			    content: "";
+			    width: 19px;
+			    height: 19px;
+			    border: 1px solid #FFFFFF;
+			    border-radius: 50%;
+			}
+			&:after{
+				position: absolute;
+			    top: 7px;
+			    left: -24px;
+			    content: "";
+			    width: 11px;
+			    height: 11px;
+			    border-radius: 50%;
+			    opacity: 0;
+			    background: #12C2D9;
+			}
+		}
+		.nav-item.show .nav-link, .nav-link.active, .nav-link:hover{
+		    color: #12C2D9;
+		    border-color: #12C2D9;
+		    background: rgba(18, 194, 217, 0.21);
+		}
+		.nav-item.show span:before,.nav-link.active span:before,.nav-link:hover span:before{
+			border-color: #12C2D9;
+		}
+		.nav-item.show span:after,.nav-link.active span:after,.nav-link:hover span:after{
+			opacity:1;
+		}
+	}
+
+	.btn-close {
+	    position: absolute;
+	    top: -16px;
+    	right: -16px;
+	}
+
+	.modal-content {
+		min-height: 572px;
+	    background: linear-gradient(180deg, #4D0780 0%, #291E60 100%);
+	    border-radius: 24px;
+	    font-weight: normal;
+		font-size: 14px;
+		line-height: 21px;
+		color: #FCFCFC;
+	}
+	.modal-body {
+	    padding: 40px 50px;
+	}
+	.-text-large{
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 27px;
+		color: #E0E0E0;
+	}
+
+	.modal-header{
+		background: url(../img/modal-sellorbit.png) no-repeat;
+		background-size:cover;
+		background-position:center;
+		padding: 8px 10px;
+		border: 0;
+		border-radius: 24px 24px 0 0;
+	}
+	.modal-title{
+		font-family: UTM Akashi;
+		font-weight: normal;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+	}
+	.modal-title i{font-size:24px;margin-right:8px;}
+	.tab-content{padding-top:32px;}
+	p{margin-bottom:32px;}
+
+	.sellOrbitTab__box{
+		padding:20px 36px 12px;background:#5E26A8;border-radius:12px;margin-bottom:24px;
+		small{
+			font-style: italic;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 21px;
+			text-align: center;
+			color: #A59BBA;
+			span{color: #00FDFF;}
+		}
+	}
+
+
+	.amount-field__prefix{
+		position: absolute;
+	    top: 10px;
+	    text-align: right;
+	    font-weight: 600;
+	    font-size: 18px;
+	    line-height: 27px;
+	    color: #F2F2F2;
+	    left:16px;right:auto;border-left:0;border-right:1px solid #8141D4;padding-right:10px;
+	    margin: 0;
+	}
+	.amount-field{width:100%;height:48px;padding-right:65px;background:#451A7D;border:1px solid #9657E9;box-sizing:border-box;border-radius:8px;color:#fff;}
+
+	.amount-field__wrap.-fixleft .amount-field{width:100%;height:48px;background:#451A7D;
+		border:1px solid #9657E9;box-sizing:border-box;border-radius:8px;color:#fff;padding-left:100px;padding-right:15px;
+		color: #F601A3;
+	    font-weight: 700;
+	    font-size: 18px;
+	}
+
+
+	.amount-field__wrap{position:relative;width:100%;}
+
+	input[type=checkbox]:checked~.checkmark:after{
+	    left: 6px;
+	    top: 3px;
+	    width: 6px;
+	    height: 10px;
+	    border: solid #000000;
+	    border-width: 0 3px 3px 0;
+	}
+	input[type=checkbox]:checked ~ .checkmark+span, input[type=checkbox]:hover ~ .checkmark+span {
+	    color: inherit;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
+
+	@media (max-width: 767px){
+		.modal-body {
+		    padding: 30px 24px;
+		}
+		.amount-field__prefix {
+		    font-size: 16px;
+		}
+	}
+	@media (max-width: 575px){
+		.modal-body {
+		    padding: 24px 16px;
+		}
+		.amount-field__prefix {
+		    font-size: 16px;
+		}
+		.nav-tabs .nav-link {
+		    font-size: 14px;
+
+		}
+		.nav-tabs span:before {
+		    top: 1px;
+		}
+		.nav-tabs span:after {
+		    top: 5px;
+		}
+		.sellOrbitTab__box {
+		    padding: 20px 16px 12px;
+		}
+		.btn-close {
+		    top: 6px;
+		    right: 16px;
+		}
+	}
+	@media (min-width:768px){
+	    .modal-dialog{max-width:600px;}
+	}
+}
+

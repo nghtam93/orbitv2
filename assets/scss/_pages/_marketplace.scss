@@ -326,15 +326,24 @@
 		&__content__top {
 		    max-width: 1164px;
 		}
+		&__content__main {
+		    max-width: 1180px;
+		}
 	}
 	@media (max-width: 1527px){
 		&__content__top {
 		    max-width: 930px;
 		}
+		&__content__main {
+		    max-width: 944px;
+		}
 	}
 	@media (max-width: 1291px){
 		&__content__top {
 		    max-width: 690px;
+		}
+		&__content__main {
+		    max-width: 708px;
 		}
 	}
 	@media (max-width: 767px){

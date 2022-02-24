@@ -2,6 +2,10 @@
 	&__wrapper{
 		position: relative;
 		margin: 100px 0;
+	}
+	&__box{
+		position: relative;
+		z-index: 1;
 		background: #22194E;
 		border-radius: 16px;
 		&:before{
@@ -17,10 +21,6 @@
 			pointer-events: none;
 			background-position: bottom left;
 		}
-	}
-	&__box{
-		position: relative;
-		z-index: 1;
 	}
 	&__header{
 	    background: #130e2e;
@@ -216,12 +216,16 @@
 			color: #6352AA;
 			opacity: 0.7;
 			margin-bottom: 16px;
+			white-space: nowrap;
 		}
 		.el__sub{
 			font-weight: bold;
 			font-size: 16px;
 			line-height: 24px;
 			color: #FFFFFF;
+			&.-address{
+				max-width: 203px;
+			}
 		}
 	}
 

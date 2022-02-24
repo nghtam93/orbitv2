@@ -266,6 +266,9 @@ $shadows-big: multiple-box-shadow(100);
         display: none;
     }
 }
+label{
+    cursor: pointer;
+}
 input[type=checkbox] + .checkmark{position:absolute;left:0;}
 input[type=checkbox] + .checkmark:before{content:"";display:block;width:17px;height:17px;position:absolute;top:1px;z-index:1;border:1.5px solid #a0a3bd;box-sizing:border-box;border-radius:3px;}
 input[type=checkbox]:checked~.checkmark + span, input[type=checkbox]:hover~.checkmark + span{color:#22a9bb;}
