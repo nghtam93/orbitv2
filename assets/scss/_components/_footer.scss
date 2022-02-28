@@ -59,7 +59,9 @@
 
 	}
 	@media (max-width: 991px){
-
+		&__logo {
+		    margin-bottom: 50px;
+		}
 	}
 	@media (max-width: 767px){
 	    margin-top: -180px;

@@ -1,0 +1,278 @@
+.page-game{
+	position: relative;
+	padding: 100px 0;
+	min-height: 100vh;
+	&__bg{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		pointer-events: none;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, #4D0780 0%, #291E60 100%);
+			opacity: 0.8;
+		}
+		.ratio {
+			height: 100%;
+		    --bs-aspect-ratio: 100vh;
+		    > img {
+			    object-fit: cover;
+			}
+		}
+	}
+	.el__item{
+		position: relative;
+		margin-bottom: var(--bs-gutter-y);
+		transition: all .5s;
+		&:hover{
+			transform: translateY(-10px);
+		}
+		.dnfix__thumb{
+			padding-top: 107%;
+		}
+	}
+}
+
+.treasure-hunter{
+	background: linear-gradient(180deg, #85B322 0%, #824D30 46.88%, #291E60 100%);
+
+	.section{
+		padding: 80px 0
+	}
+	&__header{
+		position: relative;
+		padding: 140px 0 260px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		.el__logo{
+			margin-bottom: 20px;
+			img{
+				width: auto;
+				max-height: 167px;
+			}
+		}
+		.el__title{
+			font-family: UTM Akashi;
+			font-weight: normal;
+			font-size: 72px;
+			line-height: 82px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 5px 0 0 #6F243A, -5px 0 0 #6F243A, 0 5px 0 #6F243A, 0 -5px 0 #6F243A, 1px 1px #6F243A, -1px -1px 0 #6F243A, 1px -1px 0 #6F243A, -1px 1px 0 #6F243A;
+			margin-bottom: 24px;
+		}
+		.el__excerpt{
+			margin-bottom: 44px;
+		}
+		.btn-style{
+			span{
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__video{
+		position: relative;
+		margin-top: -140px;
+		padding-bottom: 80px;
+		z-index: 1;
+		.sc__box{
+			background: linear-gradient(107.31deg, #6F243A 3.39%, #E38833 51.46%, #6F243A 97.55%);
+			border-radius: 20px;
+			padding: 35px;
+			&:before{
+				content: '';
+			    position: absolute;
+			    bottom: -20px;
+			    left: 0;
+			    right: 0;
+			    width: 100%;
+			    max-width: 940px;
+			    height: 90px;
+			    margin: auto;
+			    background: url(../img/video-shadow.png);
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    pointer-events: none;
+			    background-position: center;
+			}
+		}
+		.dnfix__thumb{
+			padding-top: 53.3%;
+		}
+	}
+	&__features{
+		position: relative;
+		padding: 80px 0 74px;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -80px;
+			left: 0;
+			width: 100%;
+			height: calc(100% + 320px);
+			background: url(../img/treasure-hunter-feature-bg.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			pointer-events: none;
+			background-position: bottom;
+		}
+		.el__item{
+			font-size: 14px;
+			margin-bottom: var(--bs-gutter-x);
+			&__thumb{
+				margin-bottom: 24px;
+
+			}
+			.dnfix__thumb{
+				padding-top: 63.075%;
+				border: 2px solid #A24B1D;
+				border-radius: 16px;
+			}
+			&__title{
+				font-family: UTM Akashi;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 29px;
+				margin-bottom: 10px;
+			}
+
+		}
+	}
+
+	&__group{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 100px;
+			left: 0;
+			width: 100%;
+			max-width: 45%;
+			height: 100%;
+			background: url(../img/treasure-hunter-group-left.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			pointer-events: none;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			max-width: 42%;
+			height: 100%;
+			background: url(../img/treasure-hunter-group-right.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			pointer-events: none;
+		}
+	}
+	&__footer--bg{
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    max-height: 1100px;
+	    background: url(../img/treasure-hunter-footer-bg.png);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    pointer-events: none;
+	    background-position: bottom;
+	    &::before, &:after {
+	    	content: '';
+	    	position: absolute;
+	    	bottom: -150px;
+	    	width: 100%;
+	    	min-width: 120px;
+	    	height: 100%;
+	    	background-repeat: no-repeat;
+			background-size: contain;
+			z-index: 1;
+
+	    }
+		&:before{
+			left: 0;
+			max-width: 25%;
+			max-height: 530px;
+			background-image: url(../img/treasure-hunter-footer-left.png);
+			background-position: bottom;
+		}
+		&:after{
+			right: 0;
+			max-width: 28%;
+			max-height: 290px;
+			background-image: url(../img/treasure-hunter-footer-right.png);
+			background-position: bottom right;
+		}
+	}
+
+	@media (max-width: 1199px){
+		&__video{
+			.sc__box {
+			    padding: 20px;
+			}
+		}
+	}
+	@media (max-width: 991px){
+		&__header{
+			.el__title {
+			    font-size: 58px;
+		    	line-height: normal;
+			}
+			.el__logo img {
+			    max-height: 100px;
+			}
+			.el__excerpt {
+			    margin-bottom: 30px;
+			    font-size: 14px;
+			}
+		}
+		&__features{
+			padding: 60px 0 54px;
+		}
+		.section {
+		    padding: 60px 0;
+		}
+		&__footer--bg{
+		    &::before, &:after {
+		    	bottom: -100px;
+		    }
+		}
+	}
+	@media (max-width: 767px){
+		&__header{
+			.el__title {
+			    font-size: 46px;
+			}
+			.btn-style span {
+			    font-size: 20px;
+			}
+		}
+		&__footer--bg{
+		    &::before, &:after {
+		    	bottom: -70px;
+		    }
+		}
+	}
+	@media (max-width: 575px){
+		&__features{
+			.el__item__title {
+			    font-size: 18px;
+			    line-height: normal;
+			}
+		}
+	}
+}
