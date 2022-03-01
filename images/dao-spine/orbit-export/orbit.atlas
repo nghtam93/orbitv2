@@ -1,0 +1,42 @@
+orbit.png
+	size: 2048, 2048
+	filter: Linear, Linear
+	pma: true
+board
+	bounds: 544, 861, 681, 154
+dom
+	bounds: 407, 1086, 161, 54
+energy
+	bounds: 167, 1090, 75, 50
+fly_thing
+	bounds: 2, 1108, 163, 32
+fx
+	bounds: 2, 2, 640, 966
+	offsets: 0, 0, 640, 975
+	rotate: 90
+gem
+	bounds: 570, 1040, 169, 100
+glow_1
+	bounds: 657, 644, 653, 199
+	offsets: 6, 2, 665, 203
+glow_2
+	bounds: 2, 927, 540, 157
+	offsets: 5, 1, 550, 160
+island
+	bounds: 970, 2, 640, 975
+	offsets: 0, 0, 640, 976
+	rotate: 90
+line
+	bounds: 244, 1090, 161, 50
+	offsets: 0, 2, 161, 54
+meta
+	bounds: 2, 669, 653, 190
+	offsets: 34, 19, 703, 244
+orbit
+	bounds: 1505, 1016, 274, 124
+	offsets: 31, 11, 317, 165
+ufo
+	bounds: 1227, 845, 635, 169
+	offsets: 0, 0, 635, 170
+wing
+	bounds: 741, 1017, 762, 123

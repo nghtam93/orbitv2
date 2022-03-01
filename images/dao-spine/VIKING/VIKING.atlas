@@ -1,0 +1,95 @@
+VIKING.png
+	size: 2048, 1024
+	filter: Linear, Linear
+	pma: true
+AXIT_1
+	bounds: 430, 303, 137, 73
+	offsets: 0, 0, 137, 78
+AXIT_HOLE
+	bounds: 814, 393, 415, 201
+AXIT_SHAPE
+	bounds: 612, 11, 205, 144
+BALL
+	bounds: 1137, 2, 162, 159
+	offsets: 7, 10, 173, 171
+BALL_2
+	bounds: 569, 307, 66, 69
+	offsets: 4, 3, 73, 75
+BALL_3
+	bounds: 1539, 447, 101, 101
+	offsets: 4, 5, 109, 110
+BODY
+	bounds: 938, 157, 177, 158
+BONE_1
+	bounds: 360, 52, 119, 69
+FINGER
+	bounds: 402, 20, 30, 22
+	rotate: 90
+FOG_1
+	bounds: 1175, 674, 348, 309
+	rotate: 90
+FOG_2
+	bounds: 926, 317, 74, 91
+	rotate: 90
+FX_1
+	bounds: 1002, 6, 149, 133
+	rotate: 90
+FX_2
+	bounds: 1539, 550, 182, 184
+	offsets: 10, 5, 202, 196
+FX_3
+	bounds: 321, 13, 79, 35
+	offsets: 2, 1, 86, 36
+FX_4
+	bounds: 239, 12, 80, 36
+	offsets: 2, 0, 88, 37
+FX_5
+	bounds: 153, 7, 84, 41
+	offsets: 9, 4, 101, 48
+FX_6
+	bounds: 1642, 457, 91, 89
+	offsets: 10, 7, 109, 105
+	rotate: 90
+HEAD
+	bounds: 819, 15, 140, 181
+	rotate: 90
+ILAND
+	bounds: 2, 286, 736, 426
+	rotate: 90
+ITEM
+	bounds: 1301, 22, 133, 139
+LEG_B
+	bounds: 481, 30, 91, 129
+	rotate: 90
+LEG_F
+	bounds: 2, 2, 119, 149
+	rotate: 90
+LIGHT
+	bounds: 430, 378, 644, 382
+	rotate: 90
+Layer_32
+	bounds: 814, 596, 426, 359
+	rotate: 90
+NECK
+	bounds: 1657, 2, 186, 163
+REE_B
+	bounds: 1434, 167, 236, 261
+RIM_LIGHT
+	bounds: 153, 50, 205, 71
+TAIL
+	bounds: 1436, 5, 160, 219
+	rotate: 90
+TAIL_SHADOW
+	bounds: 814, 310, 110, 81
+TREE_F
+	bounds: 1231, 430, 306, 242
+VIKING
+	bounds: 525, 157, 411, 144
+	offsets: 4, 5, 420, 150
+WARRIOR
+	bounds: 2, 123, 521, 161
+	offsets: 4, 5, 530, 166
+WING_B
+	bounds: 1117, 163, 315, 228
+WING_F
+	bounds: 1486, 736, 199, 286

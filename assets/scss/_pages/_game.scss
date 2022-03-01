@@ -30,13 +30,30 @@
 	}
 	.el__item{
 		position: relative;
-		margin-bottom: var(--bs-gutter-y);
-		transition: all .5s;
-		&:hover{
-			transform: translateY(-10px);
+		margin-bottom: -40px;
+		// margin-bottom: var(--bs-gutter-y);
+		// transition: all .5s;
+		// &:hover{
+		// 	transform: translateY(-10px);
+		// }
+		// .dnfix__thumb{
+		// 	padding-top: 107%;
+		// }
+		&__thumb{
+			max-width: 300px;
 		}
-		.dnfix__thumb{
-			padding-top: 107%;
+	}
+	@media (max-width: 1199px){
+		.el__item__thumb {
+		    max-width: 220px;
+		    max-height: 220px;
+		    margin: 0 auto;
+		}
+	}
+	@media (max-width: 575px){
+		.el__item__thumb {
+		    max-width: 150px;
+		    max-height: 150px;
 		}
 	}
 }

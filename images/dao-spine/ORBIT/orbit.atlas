@@ -1,0 +1,154 @@
+orbit.png
+	size: 2048, 2048
+	filter: Linear, Linear
+	pma: true
+ANTEN
+	bounds: 1982, 1749, 59, 68
+BG
+	bounds: 1037, 669, 719, 433
+	rotate: 90
+BG_2
+	bounds: 2, 1163, 1033, 831
+BOX_1
+	bounds: 2001, 1064, 51, 35
+	rotate: 90
+BOX_2
+	bounds: 2001, 1247, 51, 36
+	rotate: 90
+B_1
+	bounds: 2, 194, 202, 233
+B_2
+	bounds: 1504, 1408, 125, 138
+	rotate: 90
+B_3
+	bounds: 343, 975, 197, 186
+FAN_1
+	bounds: 1749, 1554, 30, 18
+	rotate: 90
+FAN_2
+	bounds: 1769, 1554, 30, 18
+	rotate: 90
+FOG
+	bounds: 1765, 2, 669, 279
+	offsets: 133, 0, 802, 279
+	rotate: 90
+F_1
+	bounds: 2, 429, 732, 339
+	rotate: 90
+F_2
+	bounds: 1472, 656, 732, 291
+	rotate: 90
+F_3
+	bounds: 1765, 673, 729, 234
+	rotate: 90
+H_1
+	bounds: 1504, 1535, 459, 243
+	rotate: 90
+H_2
+	bounds: 1644, 1424, 109, 144
+	rotate: 90
+H_3
+	bounds: 509, 682, 152, 220
+	offsets: 0, 0, 153, 220
+	rotate: 90
+H_4
+	bounds: 343, 353, 350, 314
+ILAND_1
+	bounds: 1037, 1390, 604, 465
+	rotate: 90
+ILAND_2
+	bounds: 1749, 1586, 408, 231
+	rotate: 90
+ILAND_3
+	bounds: 542, 836, 185, 172
+L_1
+	bounds: 909, 949, 62, 57
+	offsets: 0, 1, 63, 58
+	rotate: 90
+L_2
+	bounds: 1751, 1404, 170, 18
+	offsets: 0, 1, 171, 19
+L_3
+	bounds: 206, 322, 83, 105
+	offsets: 0, 0, 83, 106
+L_4
+	bounds: 768, 549, 118, 69
+	rotate: 90
+L_5
+	bounds: 1982, 1892, 102, 60
+	rotate: 90
+L_6
+	bounds: 343, 716, 133, 79
+	offsets: 1, 0, 134, 80
+Layer_7
+	bounds: 1577, 1404, 2, 30
+	rotate: 90
+T_1
+	bounds: 2009, 1406, 33, 76
+T_10
+	bounds: 2001, 1117, 35, 58
+T_11
+	bounds: 1982, 1588, 52, 84
+T_12
+	bounds: 830, 803, 52, 83
+	rotate: 90
+T_13
+	bounds: 1644, 1391, 31, 35
+	rotate: 90
+T_14
+	bounds: 1982, 1819, 59, 71
+T_15
+	bounds: 2001, 1353, 43, 51
+T_16
+	bounds: 2001, 1300, 43, 51
+T_17
+	bounds: 909, 890, 57, 61
+	rotate: 90
+T_18
+	bounds: 1982, 1674, 58, 73
+T_2
+	bounds: 2001, 870, 17, 58
+T_3
+	bounds: 1504, 1390, 16, 71
+	rotate: 90
+T_4
+	bounds: 2001, 1177, 35, 68
+T_5
+	bounds: 2001, 930, 17, 72
+T_6
+	bounds: 1972, 1406, 35, 76
+T_7
+	bounds: 1681, 1397, 25, 68
+	rotate: 90
+T_8
+	bounds: 1923, 1411, 18, 38
+	rotate: 90
+T_9
+	bounds: 2001, 1004, 34, 58
+UFO_1
+	bounds: 343, 797, 176, 164
+	rotate: 90
+UFO_2
+	bounds: 542, 1010, 268, 151
+fx-non repair/FX_1
+	bounds: 1972, 1484, 100, 73
+	rotate: 90
+fx-non repair/FX_2
+	bounds: 812, 1088, 100, 73
+fx-non repair/FX_3
+	bounds: 812, 1013, 100, 73
+fx-non repair/FX_4
+	bounds: 1790, 1431, 180, 153
+fx-repair/FX_1
+	bounds: 695, 583, 97, 71
+	offsets: 3, 2, 100, 73
+	rotate: 90
+fx-repair/FX_2
+	bounds: 731, 784, 97, 71
+	offsets: 3, 2, 100, 73
+fx-repair/FX_3
+	bounds: 731, 711, 97, 71
+	offsets: 3, 1, 100, 73
+fx-repair/FX_4
+	bounds: 729, 857, 178, 151
+	offsets: 1, 1, 180, 153
