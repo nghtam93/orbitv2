@@ -1,0 +1,120 @@
+
+/*Page governance*/
+.page-governance{
+	background: linear-gradient(180deg, #4D0780 0%, #291E60 100%);
+}
+.governance__header{padding:100px 0 20px;}
+.governance__content{position:relative;padding:80px 0 100px;}
+.governance__content .sc__header{margin-bottom:160px;}
+.governance__content .el__box{position:relative;}
+.governance__box{position:relative;max-width:558px;margin:50px auto 0;padding:125px 30px 125px;background:url(../img/pages/governance-box.png) no-repeat;background-size:100% 100%;}
+.governance__box .el__header{position:absolute;top:-100px;left:-12px;width:582px;}
+.governance__box .el__list{margin-bottom:32px;}
+.governance__box .el__list>li{display:flex;align-items:center;padding:26px 22px;margin-bottom:3px;font-weight:700;font-size:24px;line-height:28px;color:#FFFFFF;background:linear-gradient(104.37deg,#4E2A73 -1.15%,#451772 84.53%);border-radius:100px;}
+.governance__box .el__item__value{margin-left:auto;background:-webkit-linear-gradient(45deg,#FFE142,#F06B23);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:right;}
+.governance__box .el__item__value small{display:block;font-size:16px;line-height:16px;color:#FFFFFF;-webkit-text-fill-color:#f1f1f1;}
+.governance__box .el__list>li:nth-child(2n){background:#392A76;}
+.governance__box .btn{min-width:30%;}
+.btn.-reward{background:linear-gradient(131.45deg,#f0d023 24.6%,#eea03e 84.41%);}
+.btn.-exit{background:linear-gradient(131.45deg,#777578 24.6%,#69616D 84.41%);}
+.governance__box input{padding:15px 0 10px;border-radius:30px;border:0;background:#340d5a;text-align:center;}
+.governance__box input:focus{background:#340d5a;color:#fff;}
+.governance__box input::-webkit-input-placeholder{color:#fff;}
+.governance__box .el__list>li.-last{display:block;border-radius:24px;margin-top:32px;}
+
+
+.el__pet{position:absolute;z-index:1;pointer-events:none;}
+.el__pet--s1{top:20%;left:13%;width:14%;height:14%;background:url(../img/pages/governance-pet1.png) no-repeat;background-size:contain;animation:float10 4s ease-in-out infinite;}
+.el__pet--s2{top:40%;left:6%;width:11.7%;height:13%;background:url(../img/pages/governance-pet2.png) no-repeat;background-size:contain;animation:float20 5s ease-in-out infinite;}
+.el__pet--s3{top:60%;left:15.5%;width:16.2%;height:16.8%;background:url(../img/pages/governance-pet3.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
+.el__pet--s4{top:20%;right:16%;width:11%;height:12%;background:url(../img/pages/governance-pet4.png) no-repeat;background-size:contain;animation:float10 4s ease-in-out infinite;}
+.el__pet--s5{top:37%;right:0;width:20%;height:21%;background:url(../img/pages/governance-pet5.png) no-repeat;background-size:contain;animation:float20 5s ease-in-out infinite;}
+.el__pet--s6{top:63%;right:15%;width:16%;height:16%;background:url(../img/pages/governance-pet6.png) no-repeat;background-size:contain;animation:float30 6s ease-in-out infinite;}
+
+@keyframes float10{
+    0%{transform:translatey(0px);}
+    50%{transform:translatey(-10px);}
+    100%{transform:translatey(0px);}
+}
+@keyframes float20{
+    0%{transform:translatey(0px);}
+    50%{transform:translatey(-20px);}
+    100%{transform:translatey(0px);}
+}
+@keyframes float30{
+    0%{transform:translatey(0px);}
+    50%{transform:translatey(-30px);}
+    100%{transform:translatey(0px);}
+}
+@keyframes float40{
+    0%{transform:translatey(0px);}
+    50%{transform:translatey(-30px);}
+    100%{transform:translatey(0px);}
+}
+
+@media (max-width:1399px){
+    .el__pet--s1{left:9%;}
+    .el__pet--s2{left:3%;}
+    .el__pet--s3{left:10%;}
+    .el__pet--s4{right:12%;}
+    .el__pet--s5{right:0;}
+    .el__pet--s6{top:66%;right:11%;}
+}
+@media (max-width:1199px){
+    .el__pet--s6{right:10%;}
+    .el__pet--s3{left:9%;}
+}
+@media (max-width:991px){
+	.el__pet--s1 {
+	    left: 3%;
+	}
+	.el__pet--s3 {
+	    left: 1%;
+	}
+	.el__pet--s4 {
+	    right: 8%;
+	}
+	.el__pet--s5 {
+	    right: -4%;
+	}
+	.el__pet--s6 {
+	    right: 1%;
+	}
+}
+@media (max-width:767px){
+	.governance__box{
+		.el__header {
+		    left: -32px;
+		}
+		.el__list>li {
+		    font-size: 20px;
+		}
+		.abtn{
+			white-space: nowrap;
+		}
+	}
+
+}
+@media (max-width:575px){
+	.governance__box{
+		    padding: 100px 15px 60px;
+		.el__header {
+		    left: 0;
+		    top: -50px;
+		    width: 336px;
+		}
+		.el__list>li {
+		    font-size: 14px;
+		}
+		.el__list>li {
+		    padding: 12px 15px;
+		    margin-bottom: 3px;
+		    font-size: 14px;
+		    line-height: 18px;
+		    border-radius: 100px;
+		}
+	}
+	.governance__content {
+	    padding: 30px 0 100px;
+	}
+}

@@ -87,6 +87,43 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
+     // check checkbox checked enable button
+    function checkDisableButton() {
+        $(".js-attr-disable").each(function () {
+          let checkBox = $(this).find(".js-attr-checkbox");
+          let btn = $(this).find(".js-attr-button");
+          checkBox.on("click", function () {
+            if ($(this).is(":checked")) {
+              $(btn).removeAttr("disabled").removeClass("-disabled");
+            } else {
+              $(btn).attr("disabled", "disabled").addClass("-disabled");
+            }
+          });
+        });
+    }
+    checkDisableButton();
+
+    //Select Item
+    function ddropdown(elm) {
+
+        $(elm).click(function(e) {
+            e.preventDefault();
+
+            dnselect_parent = $(this).closest('.js-ddropdown')
+
+            if( dnselect_parent.hasClass('show') ){
+                $('.js-ddropdown').removeClass('show');
+            }else{
+                $('.js-ddropdown').removeClass('show');
+                dnselect_parent.addClass('show')
+            }
+        })
+
+        $('.js-ddropdown').mousedown(function(e){ e.stopPropagation(); });
+        $(document).mousedown(function(e){ $('.js-ddropdown').removeClass('show'); });
+    }
+    ddropdown('.js-ddropdown-toggle')
+
     /*home-intro*/
     if($('body').hasClass('home')){
 

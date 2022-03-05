@@ -88,8 +88,19 @@
           <a href="" class="btn btn__marketplace d-none d-md-block">Marketplace</a>
         </div>
         <div class="ms-auto d-none d-md-block">
-          <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4">Connect Wallet</a>
-          <a href="" class="login__link px-3 py-4 p-lg-4"><span class="icon-user"></span> Login</a>
+          <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect Wallet</a>
+          <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
+            <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
+              <span class="icon-user"></span> Login
+            </button>
+            <ul class="ddropdown-menu">
+              <li><a href="">Wallet</a></li>
+              <li><a href="">Transactions</a></li>
+              <li><a href="">Your NTFs</a></li>
+              <li><a href="">Make a Profile</a></li>
+              <li><a href="">Disconnect <i class="icon-logout"></i></a></li>
+            </ul>
+          </div>
         </div>
 
         <a href="#" class="menu-mb__btn ms-auto d-md-none" data-id="menu__mobile">
@@ -710,6 +721,50 @@
         </div>
       </div>
     </div> <!-- .wrap__page -->
+
+
+    <!-- Modal -->
+    <div class="modal wl__modal -connect fade" id="connectWalletModal" tabindex="-1" aria-labelledby="connectWalletModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header -border -border__bottom">
+            <h3 class="modal-title" id="connectWalletTitle">Connect wallet</h3>
+            <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post" class="wl__form js-attr-disable">
+              <div class="form-group scroll__wrap">
+                <ul class="wallet-list scroll__wrap__content d-flex flex-wrap justify-content-between">
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__metamask" class="-check js-attr-checkbox">
+                    <label for="wl__metamask" class="-name order-last order-md-first"><span>Metamask</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__bnb" class="-check js-attr-checkbox">
+                    <label for="wl__bnb" class="-name order-last order-md-first"><span>Binance Smart Chain</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-bnb-light.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__eth" class="-check js-attr-checkbox">
+                    <label for="wl__eth" class="-name order-last order-md-first"><span>Ethereum</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__usdt" class="-check js-attr-checkbox">
+                    <label for="wl__usdt" class="-name order-last order-md-first"><span>Deff</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-deffzone.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                </ul>
+              </div><!-- end form-group -->
+              <button class="btn -wallet -submit -disabled js-attr-button form-control" disabled type="submit"><span>Connect wallet</span></button>
+              <div class="-note text-center mt-4">No wallet found. Make sure extension is installed.</div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <nav id="menu__mobile" class="nav__mobile -st2">
 
