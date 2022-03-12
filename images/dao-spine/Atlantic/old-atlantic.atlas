@@ -1,0 +1,89 @@
+old-atlantic.png
+	size: 2048, 1024
+	filter: Linear, Linear
+	pma: true
+Layer 1
+	bounds: 859, 86, 525, 340
+	offsets: 1, 1, 527, 342
+Layer 21
+	bounds: 2, 74, 855, 299
+Layer 22
+	bounds: 1563, 913, 109, 105
+	offsets: 2, 1, 112, 108
+	rotate: 90
+Layer 24
+	bounds: 651, 428, 482, 594
+	offsets: 1, 1, 484, 596
+Layer 25
+	bounds: 2, 375, 647, 647
+	offsets: 1, 1, 649, 649
+Layer 27
+	bounds: 1049, 12, 72, 59
+	offsets: 1, 1, 74, 61
+	rotate: 90
+Layer 29
+	bounds: 1135, 491, 531, 202
+	offsets: 2, 2, 535, 206
+	rotate: 90
+Layer 32
+	bounds: 49, 8, 6, 69
+	offsets: 1, 1, 8, 71
+	rotate: 90
+Layer 34
+	bounds: 1454, 512, 159, 98
+Layer 35
+	bounds: 732, 398, 28, 57
+	offsets: 1, 1, 30, 59
+	rotate: 90
+Layer 36
+	bounds: 964, 5, 83, 79
+	offsets: 1, 1, 85, 81
+Layer 37
+	bounds: 651, 383, 43, 79
+	offsets: 1, 1, 45, 81
+	rotate: 90
+Layer 38
+	bounds: 732, 375, 21, 50
+	offsets: 1, 1, 23, 52
+	rotate: 90
+Layer 39
+	bounds: 784, 377, 19, 19
+	offsets: 1, 1, 21, 21
+Layer 4
+	bounds: 1454, 747, 275, 107
+	rotate: 90
+Layer 40
+	bounds: 1386, 22, 222, 203
+	offsets: 2, 1, 227, 206
+	rotate: 90
+Layer 41
+	bounds: 1386, 246, 223, 203
+	offsets: 3, 1, 228, 206
+	rotate: 90
+Layer 42
+	bounds: 2, 16, 644, 56
+	offsets: 2, 2, 649, 59
+Layer 43
+	bounds: 1563, 810, 101, 97
+	offsets: 1, 1, 103, 99
+	rotate: 90
+Layer 44
+	bounds: 648, 16, 314, 56
+	offsets: 9, 7, 331, 70
+Layer 45
+	bounds: 1339, 471, 551, 113
+	offsets: 5, 4, 561, 122
+	rotate: 90
+Layer 46
+	bounds: 1454, 612, 132, 133
+	offsets: 2, 2, 136, 137
+Layer 47
+	bounds: 120, 2, 9, 12
+	offsets: 1, 1, 12, 14
+Layer 48
+	bounds: 791, 399, 27, 23
+	offsets: 1, 1, 29, 25
+	rotate: 90
+Layer 5
+	bounds: 2, 2, 45, 12
+	offsets: 1, 1, 47, 14
