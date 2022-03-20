@@ -743,6 +743,9 @@
 		.el__slider{
 			width: 100vw;
 			margin-top: 40px;
+			&:not(.flickity-enabled) .slider__item__wrap + .slider__item__wrap {
+		        display: none;
+		    }
 		}
 
 		.slider__item{
