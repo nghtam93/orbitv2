@@ -167,6 +167,16 @@ position: relative;
     background-size: contain;
     pointer-events: none;
 }
+.ic-obm{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/ic-orbit-new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
 .icon-copy {
     color: #5D4DA3;
     font-size: 16px;

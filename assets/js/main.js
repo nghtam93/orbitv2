@@ -227,7 +227,6 @@ $(document).ready(function(){
     $('.js-widget--toggle').on("click",function(e) {
         $('.market__sidebar').toggleClass('active')
         $('body').toggleClass('filter-open')
-
     })
 
     // Widget

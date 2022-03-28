@@ -54,60 +54,46 @@
             <video src="images/game/page-games-bg.mp4" loop muted autoplay></video>
           </div>
         </div>
-        <div class="container">
+        <div class="container container-1200">
 
           <div class="sc__box">
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center g-4 g-xl-5">
+
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center g-4 g-xl-5 mb-5">
               <div class="col">
                 <div class="el__item">
                   <a href="game-treasure-hunter.html">
-                    <div id="player-container1" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
+                    <div id="player-container1" class="el__item__thumb" style="width: 300px; height: 300px;"></div>
                   </a>
                 </div>
               </div>
               <div class="col">
                 <div class="el__item">
                   <a href="game-maya-empire.html">
-                    <div id="player-container2" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="col">
-                <div class="el__item">
-                  <a href="game-viking-warrior.html">
-                    <div id="player-container3" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="col">
-                <div class="el__item">
-                  <a href="game-indus-overloot.html">
-                    <div id="player-container4" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="col">
-                <div class="el__item">
-                  <a href="game-egypt-battle-gods.html">
-                    <div id="player-container5" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
+                    <div id="player-container2" class="el__item__thumb" style="width: 300px; height: 300px;"></div>
                   </a>
                 </div>
               </div>
               <div class="col">
                 <div class="el__item">
                   <a href="game-atlantis-revival.html">
-                    <div id="player-container6" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="col">
-                <div class="el__item">
-                  <a href="game-orbit-metaverse.html">
-                    <div id="player-container7" class="el__item__thumb" style="width: 220px; height: 220px;"></div>
+                    <div id="player-container6" class="el__item__thumb" style="width: 300px; height: 300px;"></div>
                   </a>
                 </div>
               </div>
             </div>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center g-4 g-xl-5">
+              <div class="col">
+                <div class="el__item">
+                  <a href="game-orbit-metaverse.html">
+                    <div id="player-container7" class="el__item__thumb" style="width: 300px; height: 300px;"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
         </div>
@@ -166,30 +152,7 @@
           backgroundColor: "#00000000",
           animation: "Idle",
     });
-    new spine.SpinePlayer("player-container3", {
-          jsonUrl: "images/dao-spine/VIKING/viking.json",
-          atlasUrl: "images/dao-spine/VIKING/VIKING.atlas",
-          alpha: true,
-          showControls: false,
-          backgroundColor: "#00000000",
-          animation: "Idle",
-    });
-    new spine.SpinePlayer("player-container4", {
-          jsonUrl: "images/dao-spine/INDUS/skeleton.json",
-          atlasUrl: "images/dao-spine/INDUS/skeleton.atlas",
-          alpha: true,
-          showControls: false,
-          backgroundColor: "#00000000",
-          animation: "animation",
-    });
-    new spine.SpinePlayer("player-container5", {
-          jsonUrl: "images/dao-spine/Egypt/Island_Egypt.json",
-          atlasUrl: "images/dao-spine/Egypt/Island_Egypt.atlas",
-          alpha: true,
-          showControls: false,
-          backgroundColor: "#00000000",
-          animation: "animation",
-    });
+
     new spine.SpinePlayer("player-container6", {
           jsonUrl: "images/dao-spine/Atlantic/Island_Atlantic.json",
           atlasUrl: "images/dao-spine/Atlantic/old-atlantic.atlas",
