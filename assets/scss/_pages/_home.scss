@@ -918,6 +918,10 @@
 			&__wrap{
 
 			}
+			&__meta{
+				position: relative;
+				padding-bottom: 34px;
+			}
 			&__thumb{
 				margin-bottom: 18px;
 			}
@@ -929,20 +933,19 @@
 				margin-bottom: 5px;
 			}
 			&__sub{
-				display: flex;
-			    align-items: center;
-			    justify-content: center;
 				color: #FFFFFF;
-				i{
-					position: relative;
-					top: -1px;
-					margin-left: 10px;
-				}
 			}
 			&__excerpt{
 				min-height: 84px;
 				color: #FFFFFF;
 				opacity: 0.8;
+			}
+			&__social{
+				position: absolute;
+				left: 0;
+				right: 0;
+				text-align: center;
+				bottom: 0;
 			}
 		}
 
