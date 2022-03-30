@@ -738,6 +738,22 @@
 				z-index: -1;
 				pointer-events: none;
 			}
+			&__next {
+			    position: absolute;
+			    bottom: -31px;
+			    right: 15px;
+			    padding: 2px 30px 2px 10px;
+			    border-radius: 4px;
+			    &:after {
+				    content: "\e901";
+				    font-family: 'icomoon';
+				    font-style: initial;
+				    position: absolute;
+				    top: 7px;
+				    right: 10px;
+				    animation:Mousey 2.5s ease-in-out infinite;
+				}
+			}
 		}
 
 		.el__slider{
@@ -1186,6 +1202,9 @@
 				}
 			}
 		}
+		&-advisors {
+		    padding: 100px 0 200px;
+		}
 	}
 	@media (max-width: 991px){
 		&-header{
@@ -1327,7 +1346,7 @@
 			}
 		}
 		&-advisors {
-		    padding: 60px 0 40px;
+		    padding: 60px 0 280px;
 		}
 		&-partners {
 		    padding: 60px 0 300px;

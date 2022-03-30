@@ -315,9 +315,9 @@ position: relative;
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
     }
-    &:not(.flickity-enabled) .slider__item__wrap + .slider__item__wrap {
-        display: none;
-    }
+    // &:not(.flickity-enabled) .slider__item__wrap + .slider__item__wrap {
+    //     display: none;
+    // }
 }
 
 
