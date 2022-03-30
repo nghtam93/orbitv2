@@ -59,7 +59,7 @@
           <div class="sc__box">
 
 
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center g-4 g-xl-5 mb-5">
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 justify-content-center g-4 g-xl-5 mb-5">
               <div class="col">
                 <div class="el__item">
                   <a href="game-treasure-hunter.html">
@@ -71,6 +71,13 @@
                 <div class="el__item">
                   <a href="game-maya-empire.html">
                     <div id="player-container2" class="el__item__thumb" style="width: 300px; height: 300px;"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="el__item">
+                  <a href="game-indus-overloot.html">
+                    <div id="player-container4" class="el__item__thumb" style="width: 300px; height: 300px;"></div>
                   </a>
                 </div>
               </div>
@@ -151,6 +158,14 @@
           showControls: false,
           backgroundColor: "#00000000",
           animation: "Idle",
+    });
+     new spine.SpinePlayer("player-container4", {
+          jsonUrl: "images/dao-spine/INDUS/skeleton.json",
+          atlasUrl: "images/dao-spine/INDUS/skeleton.atlas",
+          alpha: true,
+          showControls: false,
+          backgroundColor: "#00000000",
+          animation: "animation",
     });
 
     new spine.SpinePlayer("player-container6", {
