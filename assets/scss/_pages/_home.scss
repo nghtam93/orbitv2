@@ -405,6 +405,20 @@
 		    z-index: 1;
 		    background: linear-gradient(179.81deg,rgba(255, 255, 255, 0) 31.51%,#362930 49.31%,rgba(46, 21, 63, .08) 77.28%,rgba(46,20,64,0) 99.83%);
 		}
+
+		.el__nav__wrap{
+			overflow: auto;
+			margin-left: -0.75rem;
+			margin-right: -0.75rem;
+			.nav{
+				flex-wrap: nowrap;
+				white-space: nowrap;
+
+			}
+			&::-webkit-scrollbar {
+			  display: none;
+			}
+		}
 		.nav-pills{
 			margin-bottom: 60px;
 			.nav-item{
@@ -1274,6 +1288,11 @@
 			.col--center {
 				width: 100%;
 			    margin-bottom: 50px;
+			}
+		}
+		&-nftgallery{
+			.el__nav__wrap{
+				padding-left: 0.75rem;
 			}
 		}
 	}
