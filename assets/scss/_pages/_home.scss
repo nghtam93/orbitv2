@@ -435,6 +435,7 @@
 			    line-height: 27px;
 			    text-align: center;
 			    color: #FFFFFF;
+			    text-transform: uppercase;
 			    &.active, &:hover{
 			    	background: rgba(255, 255, 255, 0.1);
 			    	color: #FFFFFF;
@@ -841,6 +842,10 @@
     				}
 				}
 			}
+		}
+
+		.flickity__slider__arrow {
+		    bottom: -30px;
 		}
 	}
 
@@ -1408,6 +1413,11 @@
 			.slider__item__meta {
 			    max-width: calc( 100% - 32px);
 			    padding: 24px;
+			}
+		}
+		&-roadmap{
+			.flickity__slider__arrow {
+			    padding: 0 30px;
 			}
 		}
 		&-intro{

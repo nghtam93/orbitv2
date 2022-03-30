@@ -211,6 +211,15 @@ $(document).ready(function(){
               ourteam_flkty.previous();
         });
 
+        // Your main div is characters-main
+        var roadmap_flkty = new Flickity('.home-roadmap__slider');
+        $(".home-roadmap .flickity__button.-next").on("click", function() {
+               roadmap_flkty.next();
+        });
+        $(".home-roadmap .flickity__button.-prev").on("click", function() {
+              roadmap_flkty.previous();
+        });
+
 
         // Home ourteam
         $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {

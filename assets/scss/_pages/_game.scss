@@ -46,6 +46,7 @@
 			min-height: 470px;
 		}
 		.el__item{
+			margin-bottom: -60px;
 			&__thumb{
 				max-width: 220px;
 				max-height: 220px;
@@ -54,13 +55,17 @@
 	}
 	@media (max-width: 1399px){
 		padding: 50px 0;
+		.el__item{
+			margin-bottom: -40px;
+			&__thumb{
+				max-width: 200px;
+			    max-height: 200px;
+			    margin: 0 auto;
+			}
+		}
 	}
 	@media (max-width: 1199px){
-		.el__item__thumb {
-		    max-width: 220px;
-		    max-height: 220px;
-		    margin: 0 auto;
-		}
+
 	}
 	@media (max-width: 991px){
 
