@@ -201,16 +201,11 @@
                 }
             }
             .sub-menu{
-                margin-top: 15px;
-                li{
-                    padding: 2px 12px;
-                    &:not(:last-child){
-                        margin-bottom: 8px;
-                    }
-                    a{
-                        font-size: 16px;
-                    }
 
+            }
+            &.-hide-parrent-mb{
+                >a{
+                    display: none;
                 }
             }
         }

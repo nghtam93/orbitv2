@@ -131,6 +131,7 @@
 				font-size: 18px;
 				line-height: 27px;
 				color: #23C6DB;
+				word-break: all;
 			}
 			&.-body{
 				.stats__item__sub{
@@ -146,7 +147,7 @@
 			font-size: 14px;
 			line-height: 21px;
 			color: #FFFFFF;
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 		.abilities__item{
 			margin-bottom: 24px;
@@ -308,5 +309,25 @@
 		&__back {
 		    border: 0;
 		}
+	}
+}
+
+
+@media (max-width: 1199px){
+	.dnfix__thumb[data-v-070c186f] {
+	    height: 336px!important;
+	}
+	.description[data-v-070c186f] {
+	    top: 63%;
+	}
+}
+@media (max-width: 991px){
+	.dnfix__thumb[data-v-070c186f] {
+	    height: 440px!important;
+	}
+}
+@media (max-width: 767px){
+	.dnfix__thumb[data-v-070c186f] {
+	    height: 336px!important;
 	}
 }

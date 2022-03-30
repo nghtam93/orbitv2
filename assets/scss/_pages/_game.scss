@@ -41,28 +41,28 @@
 		}
 	}
 	@media (max-width: 1599px){
-		padding: 150px 0;
+		padding: 120px 0;
 		.el__box{
 			min-height: 470px;
 		}
 		.el__item{
-			margin-bottom: -60px;
+			margin-bottom: -40px;
 			&__thumb{
-				max-width: 220px;
-				max-height: 220px;
+				max-width: 200px;
+				max-height: 200px;
 			}
 		}
 	}
 	@media (max-width: 1399px){
 		padding: 50px 0;
-		.el__item{
-			margin-bottom: -40px;
-			&__thumb{
-				max-width: 200px;
-			    max-height: 200px;
-			    margin: 0 auto;
-			}
-		}
+		// .el__item{
+		// 	margin-bottom: -40px;
+		// 	&__thumb{
+		// 		max-width: 200px;
+		// 	    max-height: 200px;
+		// 	    margin: 0 auto;
+		// 	}
+		// }
 	}
 	@media (max-width: 1199px){
 

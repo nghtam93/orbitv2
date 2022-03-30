@@ -629,6 +629,9 @@ position: relative;
             bottom: -75px;
         }
     }
+    .loading-page__logo img {
+        max-height: 75px;
+    }
 }
 
 @media (min-width: 768px){
