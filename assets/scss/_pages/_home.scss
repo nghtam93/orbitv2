@@ -476,7 +476,8 @@
 		}
 
 		.flickity-page-dots{
-			left: -100px;
+			left: -0.75rem;
+			// left: -100px;
 		}
 		.slider__item{
 			position: relative;
@@ -1142,7 +1143,7 @@
 		}
 		&-nftgallery{
 			.flickity-page-dots {
-			    left: -50px;
+			    // left: -50px;
 			}
 		}
 	}
@@ -1201,7 +1202,7 @@
 		&-nftgallery{
 			padding: 80px 0 60px;
 			.flickity-page-dots {
-			    left: -0.75rem;
+			    // left: -0.75rem;
 			}
 		}
 		&-we-made{
