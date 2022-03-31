@@ -845,8 +845,17 @@
 			}
 		}
 
+		.flickity__button {
+		    margin: 0 30px;
+		    &.-next {
+			    padding-right: 45px;
+			    text-align: end;
+			    margin-right: 70px;
+			}
+		}
 		.flickity__slider__arrow {
-		    bottom: -30px;
+		    bottom: -50px;
+		    justify-content: center;
 		}
 	}
 
@@ -1040,6 +1049,7 @@
 			}
 		}
 	}
+
 	@media (max-width: 1399px){
 		&-find-out{
 			.el__wrap {
@@ -1233,6 +1243,19 @@
 				    font-size: 14px;
 				    line-height: 20px;
 				}
+			}
+		}
+		&-roadmap{
+			.flickity__slider__arrow {
+				padding: 0;
+			    justify-content: space-between;
+			}
+			.flickity__button{
+				margin: 0;
+			}
+			.flickity__button.-next {
+			    padding-right: 40px;
+			    margin-right: 0;
 			}
 		}
 		&-group-ap {
@@ -1484,6 +1507,11 @@
 					}
 				}
 			}
+		}
+	}
+	@media (min-width: 1500px){
+		&-roadmap .flickity__slider__arrow{
+			display: none;
 		}
 	}
 }
