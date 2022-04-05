@@ -75,6 +75,9 @@
 		    max-width: 150px;
 		    max-height: 150px;
 		}
+		.sc__header__title {
+		    font-size: 28px;
+		}
 	}
 }
 
@@ -305,6 +308,9 @@
 		}
 	}
 	@media (max-width: 575px){
+		&__header .el__title {
+		    font-size: 38px;
+		}
 		&__features{
 			.el__item__title {
 			    font-size: 18px;
