@@ -307,6 +307,10 @@ position: relative;
 .videoWrapper iframe,.videoWrapper object,.videoWrapper embed,.videoWrapper video{position:absolute;top:0;left:0;width:100%;height:auto;}
 
 .ratio{
+    &.ratio-radius-10{
+        border-radius: 10px;
+        overflow: hidden;
+    }
     &.-center{
         video{
             object-position: center;
@@ -543,6 +547,10 @@ position: relative;
 .col-300{
     flex: 0 0 auto;
     width: 300px;
+}
+.mw-800{
+    max-width: 800px;
+    margin: 0 auto;
 }
 /**/
 .ddropdown{
