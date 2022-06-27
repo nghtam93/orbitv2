@@ -31,6 +31,7 @@
 	.sc__box {
 	    position: relative;
 	    z-index: 2;
+	    top: -5.5rem;
 	}
 	.el__item{
 		position: relative;
@@ -42,14 +43,17 @@
 	}
 	@media (max-width: 1599px){
 		padding: 120px 0;
+		.sc__box{
+			top: 0;
+		}
 		.el__box{
 			min-height: 470px;
 		}
 		.el__item{
 			margin-bottom: -40px;
 			&__thumb{
-				max-width: 200px;
-				max-height: 200px;
+				max-width: 220px;
+				max-height: 220px;
 			}
 		}
 	}
